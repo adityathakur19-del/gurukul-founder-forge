@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom workshop theme colors
+				sunrise: 'hsl(var(--sunrise))',
+				saffron: 'hsl(var(--saffron))',
+				'trust-blue': 'hsl(var(--trust-blue))',
+				'warm-white': 'hsl(var(--warm-white))',
+				'soft-gray': 'hsl(var(--soft-gray))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
