@@ -53,9 +53,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				// Custom workshop theme colors
-				sunrise: 'hsl(var(--sunrise))',
 				saffron: 'hsl(var(--saffron))',
-				'trust-blue': 'hsl(var(--trust-blue))',
+				'deep-saffron': 'hsl(var(--deep-saffron))',
+				'startup-blue': 'hsl(var(--startup-blue))',
+				'startup-gray': 'hsl(var(--startup-gray))',
+				'green-accent': 'hsl(var(--green-accent))',
 				'warm-white': 'hsl(var(--warm-white))',
 				'soft-gray': 'hsl(var(--soft-gray))',
 				sidebar: {
@@ -90,11 +92,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'light-rays': {
+					'0%': { transform: 'scale(0.8) rotate(0deg)', opacity: '0.3' },
+					'50%': { transform: 'scale(1.1) rotate(180deg)', opacity: '0.6' },
+					'100%': { transform: 'scale(0.8) rotate(360deg)', opacity: '0.3' }
+				},
+				'graph-grow': {
+					'0%': { transform: 'scaleY(0)', opacity: '0' },
+					'100%': { transform: 'scaleY(1)', opacity: '1' }
+				},
+				'leaf-sway': {
+					'0%, 100%': { transform: 'rotate(-2deg)' },
+					'50%': { transform: 'rotate(2deg)' }
+				},
+				'fade-in-up': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--saffron) / 0.3)' },
+					'50%': { boxShadow: '0 0 40px hsl(var(--saffron) / 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'light-rays': 'light-rays 8s ease-in-out infinite',
+				'graph-grow': 'graph-grow 1.5s ease-out forwards',
+				'leaf-sway': 'leaf-sway 3s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},

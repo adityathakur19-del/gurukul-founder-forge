@@ -18,9 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-warm hover:shadow-lg hover:-translate-y-0.5",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-sunrise to-saffron text-white hover:from-saffron hover:to-sunrise shadow-warm hover:shadow-xl hover:-translate-y-1 text-base font-bold",
-        trust: "bg-trust-blue text-white hover:bg-trust-blue/90 shadow-trust hover:shadow-lg hover:-translate-y-0.5",
+        hero: "bg-gradient-to-r from-saffron to-deep-saffron text-white hover:from-deep-saffron hover:to-saffron shadow-warm hover:shadow-xl hover:-translate-y-1 text-base font-bold animate-pulse-glow",
+        startup: "bg-startup-blue text-white hover:bg-startup-blue/90 shadow-startup hover:shadow-lg hover:-translate-y-0.5",
         cta: "bg-gradient-to-r from-primary to-secondary text-white hover:from-secondary hover:to-primary shadow-warm hover:shadow-xl hover:-translate-y-1 text-lg font-bold",
+        growth: "bg-gradient-to-r from-green-accent to-accent text-white hover:from-accent hover:to-green-accent shadow-soft hover:shadow-lg hover:-translate-y-0.5",
       },
       size: {
         default: "h-10 px-4 py-2",

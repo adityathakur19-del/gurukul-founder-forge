@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 30 25% 15%;
 
-    /* Sunrise Orange - Primary brand color */
-    --primary: 25 100% 60%;
+    /* Saffron - Primary brand color */
+    --primary: 35 90% 55%;
     --primary-foreground: 0 0% 100%;
 
     /* Deep Saffron - Secondary warm accent */
-    --secondary: 35 90% 55%;
+    --secondary: 30 95% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Cool Trust Blue - For trust elements */
-    --accent: 215 70% 45%;
+    /* Green Accent - Fresh growth color */
+    --accent: 120 40% 45%;
     --accent-foreground: 0 0% 100%;
 
     --muted: 45 20% 95%;
@@ -40,20 +40,23 @@ All colors MUST be HSL.
     --ring: 25 100% 60%;
 
     /* Custom design tokens */
-    --sunrise: 25 100% 60%;
     --saffron: 35 90% 55%;
-    --trust-blue: 215 70% 45%;
+    --deep-saffron: 30 95% 50%;
+    --startup-blue: 215 70% 45%;
+    --startup-gray: 220 15% 60%;
+    --green-accent: 120 40% 45%;
     --warm-white: 45 30% 98%;
     --soft-gray: 30 10% 90%;
     
     /* Gradients */
-    --gradient-sunrise: linear-gradient(135deg, hsl(var(--sunrise)), hsl(var(--saffron)));
-    --gradient-trust: linear-gradient(135deg, hsl(var(--trust-blue)), hsl(215 60% 55%));
+    --gradient-saffron: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--deep-saffron)));
+    --gradient-startup: linear-gradient(135deg, hsl(var(--startup-blue)), hsl(220 70% 55%));
     --gradient-warm: linear-gradient(180deg, hsl(var(--warm-white)), hsl(45 20% 95%));
+    --gradient-growth: linear-gradient(135deg, hsl(var(--green-accent)), hsl(120 50% 55%));
 
     /* Shadows */
-    --shadow-warm: 0 10px 30px -10px hsl(var(--sunrise) / 0.2);
-    --shadow-trust: 0 10px 30px -10px hsl(var(--trust-blue) / 0.2);
+    --shadow-warm: 0 10px 30px -10px hsl(var(--saffron) / 0.2);
+    --shadow-startup: 0 10px 30px -10px hsl(var(--startup-blue) / 0.2);
     --shadow-soft: 0 4px 20px -5px hsl(30 20% 80% / 0.3);
 
     --radius: 0.5rem;

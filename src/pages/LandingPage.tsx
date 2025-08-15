@@ -1,31 +1,29 @@
 import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
-import PainPointSection from "@/components/PainPointSection";
-import AgendaSection from "@/components/AgendaSection";
-import AudienceSection from "@/components/AudienceSection";
+import WhoShouldAttendSection from "@/components/WhoShouldAttendSection";
+import CoreTakeawaysSection from "@/components/CoreTakeawaysSection";
+import MentorSection from "@/components/MentorSection";
+import WhatYoullGetSection from "@/components/WhatYoullGetSection";
+import ProofCredibilitySection from "@/components/ProofCredibilitySection";
 import ComparisonSection from "@/components/ComparisonSection";
 import JourneySection from "@/components/JourneySection";
-import BonusSection from "@/components/BonusSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import AboutSection from "@/components/AboutSection";
-import FAQSection from "@/components/FAQSection";
-import FinalCTASection from "@/components/FinalCTASection";
+import EnhancedFAQSection from "@/components/EnhancedFAQSection";
+import FinalCallToActionSection from "@/components/FinalCallToActionSection";
 
 const LandingPage = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
       <TrustSection />
-      <PainPointSection />
-      <AgendaSection />
-      <AudienceSection />
+      <WhoShouldAttendSection />
+      <CoreTakeawaysSection />
+      <MentorSection />
+      <WhatYoullGetSection />
+      <ProofCredibilitySection />
       <ComparisonSection />
       <JourneySection />
-      <BonusSection />
-      <TestimonialsSection />
-      <AboutSection />
-      <FAQSection />
-      <FinalCTASection />
+      <EnhancedFAQSection />
+      <FinalCallToActionSection />
     </main>
   );
 };
