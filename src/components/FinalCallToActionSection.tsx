@@ -11,10 +11,14 @@ const FinalCallToActionSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-12">
-          {/* Traditional Wisdom Quote */}
+          {/* Logo and Traditional Wisdom Quote */}
           <div className="space-y-6">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto animate-pulse-glow">
-              <span className="text-3xl">🕉️</span>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
+                alt="NewGen Gurukul Logo"
+                className="h-20 w-auto opacity-90"
+              />
             </div>
             <blockquote className="text-3xl md:text-5xl font-bold text-white leading-tight">
               "गुरुकुल में सीखा गया ज्ञान जीवन भर काम आता है"

@@ -18,6 +18,15 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
+            {/* Logo */}
+            <div className="flex justify-center lg:justify-start mb-6">
+              <img 
+                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
+                alt="NewGen Gurukul Logo"
+                className="h-16 w-auto"
+              />
+            </div>
+            
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Build Your Startup{" "}

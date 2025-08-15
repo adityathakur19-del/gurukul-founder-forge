@@ -7,6 +7,13 @@ const MentorSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
+            <div className="flex justify-center mb-4">
+              <img 
+                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
+                alt="NewGen Gurukul Logo"
+                className="h-12 w-auto opacity-80"
+              />
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold">
               Meet Your{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
