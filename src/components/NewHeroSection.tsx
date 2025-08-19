@@ -60,7 +60,7 @@ const NewHeroSection = () => {
               <img 
                 src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
                 alt="NewGen Gurukul Logo"
-                className="h-20 w-auto animate-lamp-glow"
+                className="h-32 w-auto animate-lamp-glow"
               />
             </div>
             
