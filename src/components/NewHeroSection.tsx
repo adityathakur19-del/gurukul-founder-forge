@@ -127,12 +127,12 @@ const NewHeroSection = () => {
           </div>
 
           {/* Right Visual Elements */}
-          <div className="relative animate-fade-in-scale delay-300">
+          <div className="relative animate-fade-in-scale delay-300 mt-8 lg:mt-0">
             {/* Traditional + Modern Blend Visual */}
             <div className="relative rounded-2xl overflow-hidden shadow-wisdom bg-gradient-to-br from-guru-gold/10 to-saffron/20 p-8">
               {/* Knowledge Tree Background */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="text-center text-8xl animate-leaf-sway">🌳</div>
+              <div className="absolute inset-0 opacity-10 flex items-start justify-center pt-4">
+                <div className="text-8xl animate-leaf-sway">🌳</div>
               </div>
               
               {/* Modern Elements Overlay */}
