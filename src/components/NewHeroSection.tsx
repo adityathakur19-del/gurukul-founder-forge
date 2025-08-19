@@ -66,7 +66,11 @@ const NewHeroSection = () => {
               <img 
                 src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
                 alt="NewGen Gurukul Logo"
-                className="h-32 w-auto animate-lamp-glow"
+                className="h-48 w-auto animate-lamp-glow object-contain"
+                style={{ 
+                  filter: 'brightness(1.05) contrast(1.1)',
+                  clipPath: 'inset(10px 20px 10px 20px)'
+                }}
               />
             </div>
             
