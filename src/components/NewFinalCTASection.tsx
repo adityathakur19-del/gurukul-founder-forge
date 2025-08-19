@@ -4,24 +4,38 @@ import { useState, useEffect } from "react";
 
 const NewFinalCTASection = () => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 2,
-    hours: 14,
-    minutes: 30
+    days: 0,
+    hours: 0,
+    minutes: 0
   });
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59 };
-        } else if (prev.days > 0) {
-          return { ...prev, days: prev.days - 1, hours: 23, minutes: 59 };
-        }
-        return prev;
-      });
-    }, 60000); // Update every minute
+    const calculateTimeLeft = () => {
+      // Target date: September 1, 2025 10:00 AM IST
+      const targetDate = new Date('2025-09-01T10:00:00+05:30');
+      const now = new Date();
+      
+      // Convert current time to IST
+      const currentIST = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Kolkata"}));
+      
+      const difference = targetDate.getTime() - currentIST.getTime();
+      
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        
+        setTimeLeft({ days, hours, minutes });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+      }
+    };
+
+    // Calculate immediately
+    calculateTimeLeft();
+    
+    // Update every minute
+    const timer = setInterval(calculateTimeLeft, 60000);
 
     return () => clearInterval(timer);
   }, []);
