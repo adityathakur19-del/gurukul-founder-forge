@@ -133,7 +133,7 @@ const NewHeroSection = () => {
           </div>
 
           {/* Right Visual Elements */}
-          <div className="relative animate-fade-in-scale delay-300 mt-8 lg:mt-0">
+          <div className="relative animate-fade-in-scale delay-300 -mt-8 lg:-mt-16">
             {/* Traditional + Modern Blend Visual */}
             <div className="relative rounded-2xl overflow-hidden shadow-wisdom bg-gradient-to-br from-guru-gold/10 to-saffron/20 p-8">
               {/* Knowledge Tree Background */}
