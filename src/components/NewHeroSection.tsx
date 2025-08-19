@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Users, Star } from "lucide-react";
 import { useState, useEffect } from "react";
+import AuthButtons from "@/components/AuthButtons";
 
 const NewHeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -44,6 +45,11 @@ const NewHeroSection = () => {
 
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
+      {/* Auth Buttons - Top Right */}
+      <div className="absolute top-6 right-6 z-20">
+        <AuthButtons />
+      </div>
+      
       {/* Traditional Background Elements */}
       <div className="absolute inset-0 opacity-5 bg-mandala-pattern"></div>
       
