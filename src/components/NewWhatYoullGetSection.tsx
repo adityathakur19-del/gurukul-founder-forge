@@ -123,17 +123,9 @@ const NewWhatYoullGetSection = () => {
                 return (
                   <div 
                     key={index}
-                    className={`text-center p-6 rounded-xl transition-all duration-300 ${
-                      bonus.highlight 
-                        ? 'bg-white shadow-warm border border-saffron/20' 
-                        : 'bg-white/50'
-                    }`}
+                    className="text-center p-6 rounded-xl transition-all duration-300 bg-white shadow-warm border border-saffron/20 hover:shadow-lg hover:-translate-y-1"
                   >
-                    <div className={`w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center ${
-                      bonus.highlight 
-                        ? 'bg-gradient-to-br from-saffron to-deep-saffron' 
-                        : 'bg-gradient-to-br from-guru-gold to-saffron'
-                    }`}>
+                    <div className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-to-br from-saffron to-deep-saffron">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">
