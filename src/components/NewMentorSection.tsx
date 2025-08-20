@@ -66,7 +66,7 @@ const NewMentorSection = () => {
                   Philosophy
                 </h4>
                 <p className="text-muted-foreground italic">
-                  "Blending ancient Gurukul wisdom with modern startup tools. Practical, 
+                  "Blending cardinal Gurukul wisdom with modern startup tools. Practical, 
                   founder-to-founder learning that combines time-tested principles with 
                   cutting-edge methodologies."
                 </p>
@@ -92,7 +92,7 @@ const NewMentorSection = () => {
                   <div className="flex justify-center space-x-6">
                     <div className="text-center">
                       <div className="text-2xl animate-wisdom-glow">📚</div>
-                      <div className="text-xs text-muted-foreground mt-1">Ancient Wisdom</div>
+                      <div className="text-xs text-muted-foreground mt-1">Cardinal Wisdom</div>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl animate-floating">🚀</div>
