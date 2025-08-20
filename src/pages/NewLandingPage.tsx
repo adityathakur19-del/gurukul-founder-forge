@@ -1,31 +1,82 @@
+import { Suspense, lazy } from "react";
 import NewHeroSection from "@/components/NewHeroSection";
 import TrustHighlightsSection from "@/components/TrustHighlightsSection";
-import NewWhoShouldAttendSection from "@/components/NewWhoShouldAttendSection";
-import NewCoreOutcomesSection from "@/components/NewCoreOucomesSection";
-import NewMentorSection from "@/components/NewMentorSection";
-import NewJourneySection from "@/components/NewJourneySection";
-import NewWhatYoullGetSection from "@/components/NewWhatYoullGetSection";
-import NewBonusesSection from "@/components/NewBonusesSection";
-import NewProofSection from "@/components/NewProofSection";
-import NewFAQSection from "@/components/NewFAQSection";
-import NewFinalCTASection from "@/components/NewFinalCTASection";
-import FloatingCTA from "@/components/FloatingCTA";
+import LazySection from "@/components/LazySection";
+
+// Lazy load heavy components
+const NewWhoShouldAttendSection = lazy(() => import("@/components/NewWhoShouldAttendSection"));
+const NewCoreOutcomesSection = lazy(() => import("@/components/NewCoreOucomesSection"));
+const NewMentorSection = lazy(() => import("@/components/NewMentorSection"));
+const NewJourneySection = lazy(() => import("@/components/NewJourneySection"));
+const NewWhatYoullGetSection = lazy(() => import("@/components/NewWhatYoullGetSection"));
+const NewBonusesSection = lazy(() => import("@/components/NewBonusesSection"));
+const NewProofSection = lazy(() => import("@/components/NewProofSection"));
+const NewFAQSection = lazy(() => import("@/components/NewFAQSection"));
+const NewFinalCTASection = lazy(() => import("@/components/NewFinalCTASection"));
+
+const LoadingFallback = () => (
+  <div className="w-full h-32 bg-background/50 animate-pulse rounded-lg" />
+);
 
 const NewLandingPage = () => {
   return (
     <main className="min-h-screen overflow-x-hidden">
       <NewHeroSection />
       <TrustHighlightsSection />
-      <NewWhoShouldAttendSection />
-      <NewCoreOutcomesSection />
-      <NewMentorSection />
-      <NewJourneySection />
-      <NewWhatYoullGetSection />
-      <NewBonusesSection />
-      <NewProofSection />
-      <NewFAQSection />
-      <NewFinalCTASection />
       
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewWhoShouldAttendSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewCoreOutcomesSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewMentorSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewJourneySection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewWhatYoullGetSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewBonusesSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewProofSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewFAQSection />
+        </Suspense>
+      </LazySection>
+      
+      <LazySection>
+        <Suspense fallback={<LoadingFallback />}>
+          <NewFinalCTASection />
+        </Suspense>
+      </LazySection>
     </main>
   );
 };

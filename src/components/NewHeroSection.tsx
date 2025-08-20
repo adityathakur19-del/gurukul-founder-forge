@@ -2,55 +2,11 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Calendar, Star, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useAuthAction } from "@/hooks/useAuthAction";
-import { useState, useEffect } from "react";
+import { useCountdown } from "@/hooks/useCountdown";
 import AuthButtons from "@/components/AuthButtons";
 const NewHeroSection = () => {
   const { executeAuthAction } = useAuthAction();
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      // Target date: September 1, 2025 10:00 AM IST
-      const targetDate = new Date('2025-09-01T10:00:00+05:30');
-      const now = new Date();
-
-      // Convert current time to IST
-      const currentIST = new Date(now.toLocaleString("en-US", {
-        timeZone: "Asia/Kolkata"
-      }));
-      const difference = targetDate.getTime() - currentIST.getTime();
-      if (difference > 0) {
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(difference / (1000 * 60 * 60) % 24);
-        const minutes = Math.floor(difference / 1000 / 60 % 60);
-        const seconds = Math.floor(difference / 1000 % 60);
-        setTimeLeft({
-          days,
-          hours,
-          minutes,
-          seconds
-        });
-      } else {
-        setTimeLeft({
-          days: 0,
-          hours: 0,
-          minutes: 0,
-          seconds: 0
-        });
-      }
-    };
-
-    // Calculate immediately
-    calculateTimeLeft();
-
-    // Update every second
-    const timer = setInterval(calculateTimeLeft, 1000);
-    return () => clearInterval(timer);
-  }, []);
+  const timeLeft = useCountdown('2025-09-01T10:00:00+05:30', true);
   return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
       {/* Auth Buttons - Top Right */}
       <div className="absolute top-6 right-6 z-20">
