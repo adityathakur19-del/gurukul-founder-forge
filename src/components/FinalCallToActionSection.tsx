@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Clock, Users, Zap, CheckCircle } from "lucide-react";
+import { CheckCircle, Clock, Users, Zap } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const FinalCallToActionSection = () => {
+  const { executeAuthAction } = useAuthAction();
   return (
     <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
       {/* Background Pattern */}
@@ -66,6 +68,7 @@ const FinalCallToActionSection = () => {
               variant="outline" 
               size="lg" 
               className="bg-white text-saffron hover:bg-white/90 border-white text-xl px-16 py-8 h-auto font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-pulse-glow"
+              onClick={() => executeAuthAction()}
             >
               <CheckCircle className="w-6 h-6 mr-2" />
               Reserve My Seat

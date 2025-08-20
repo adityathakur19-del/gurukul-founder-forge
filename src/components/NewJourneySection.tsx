@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Users, Calendar, Rocket, Trophy } from "lucide-react";
+import { CheckCircle, ArrowRight, Users, Calendar, Rocket, Trophy } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const NewJourneySection = () => {
+  const { executeAuthAction } = useAuthAction();
   const journeySteps = [
     {
       icon: Users,
@@ -105,7 +107,11 @@ const NewJourneySection = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-startup-blue to-green-accent hover:from-green-accent hover:to-startup-blue text-white px-10 py-6 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-startup-blue to-green-accent hover:from-green-accent hover:to-startup-blue text-white px-10 py-6 text-lg"
+              onClick={() => executeAuthAction()}
+            >
               Yes! Reserve My Seat
             </Button>
           </div>

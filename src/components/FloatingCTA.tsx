@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 import { useState, useEffect } from "react";
 
 const FloatingCTA = () => {
+  const { executeAuthAction } = useAuthAction();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -25,6 +27,7 @@ const FloatingCTA = () => {
       <Button 
         size="lg"
         className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-6 py-4 text-lg font-semibold shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all duration-300 animate-pulse-glow"
+        onClick={() => executeAuthAction()}
       >
         <CheckCircle className="w-5 h-5 mr-2" />
         Reserve My Seat

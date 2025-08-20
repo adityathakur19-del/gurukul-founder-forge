@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Tag, Users as UsersIcon, Gift, Clock } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const NewBonusesSection = () => {
+  const { executeAuthAction } = useAuthAction();
   return (
     <section className="py-20 bg-gradient-to-b from-warm-white to-green-accent/5">
       <div className="container mx-auto px-4">
@@ -127,7 +129,11 @@ const NewBonusesSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-12 py-6 text-xl">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-12 py-6 text-xl"
+              onClick={() => executeAuthAction()}
+            >
               Claim Early Bird - ₹4,999
             </Button>
             <p className="text-sm text-muted-foreground mt-4">

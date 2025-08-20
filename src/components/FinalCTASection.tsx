@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Clock, Users, Zap } from "lucide-react";
+import { CheckCircle, Clock, Shield, Users, Zap } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const FinalCTASection = () => {
+  const { executeAuthAction } = useAuthAction();
   return (
     <section className="py-20 bg-gradient-to-br from-sunrise via-saffron to-trust-blue relative overflow-hidden">
       {/* Background Pattern */}
@@ -46,6 +48,7 @@ const FinalCTASection = () => {
               variant="outline" 
               size="lg" 
               className="bg-white text-sunrise hover:bg-white/90 border-white text-xl px-16 py-8 h-auto font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              onClick={() => executeAuthAction()}
             >
               Reserve My Seat Now
             </Button>

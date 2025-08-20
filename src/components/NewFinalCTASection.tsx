@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Clock, Users, Zap, CheckCircle } from "lucide-react";
+import { CheckCircle, Clock, Shield, Zap, Users } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 import { useState, useEffect } from "react";
 
 const NewFinalCTASection = () => {
+  const { executeAuthAction } = useAuthAction();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -107,6 +109,7 @@ const NewFinalCTASection = () => {
             <Button 
               size="lg" 
               className="bg-white text-saffron hover:bg-white/90 hover:text-deep-saffron border-2 border-white text-2xl px-20 py-8 h-auto font-bold shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-300 animate-pulse-glow"
+              onClick={() => executeAuthAction()}
             >
               <CheckCircle className="w-8 h-8 mr-3" />
               Yes! Reserve My Seat

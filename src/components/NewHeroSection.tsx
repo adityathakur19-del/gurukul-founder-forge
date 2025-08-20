@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Clock, Users, Star } from "lucide-react";
+import { CheckCircle, Users, Calendar, Star, Clock } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { useAuthAction } from "@/hooks/useAuthAction";
 import { useState, useEffect } from "react";
 import AuthButtons from "@/components/AuthButtons";
 const NewHeroSection = () => {
+  const { executeAuthAction } = useAuthAction();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -111,7 +114,11 @@ const NewHeroSection = () => {
                 </div>
               </div>
               
-              <Button size="lg" className="w-full text-xl px-12 py-6 h-auto mb-4 bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron">
+              <Button 
+                size="lg" 
+                className="w-full text-xl px-12 py-6 h-auto mb-4 bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron"
+                onClick={() => executeAuthAction()}
+              >
                 <CheckCircle className="w-6 h-6 mr-2" />
                 Reserve My Seat – Only 50 Spots
               </Button>

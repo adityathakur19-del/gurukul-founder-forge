@@ -1,7 +1,9 @@
 import { Gift, Users, Clock, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const BonusSection = () => {
+  const { executeAuthAction } = useAuthAction();
   const bonuses = [
     {
       icon: Gift,
@@ -92,7 +94,12 @@ const BonusSection = () => {
                 <span className="text-sunrise text-xl">₹14,999</span>
               </div>
               
-              <Button variant="cta" className="w-full mt-6" size="lg">
+              <Button 
+                variant="cta" 
+                className="w-full mt-6" 
+                size="lg"
+                onClick={() => executeAuthAction()}
+              >
                 <Tag className="w-5 h-5" />
                 Claim This Deal - Only 3 Seats Left
               </Button>
