@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Users, Star } from "lucide-react";
 import { useState, useEffect } from "react";
 import AuthButtons from "@/components/AuthButtons";
-
 const NewHeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -10,41 +9,46 @@ const NewHeroSection = () => {
     minutes: 0,
     seconds: 0
   });
-
   useEffect(() => {
     const calculateTimeLeft = () => {
       // Target date: September 1, 2025 10:00 AM IST
       const targetDate = new Date('2025-09-01T10:00:00+05:30');
       const now = new Date();
-      
+
       // Convert current time to IST
-      const currentIST = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Kolkata"}));
-      
+      const currentIST = new Date(now.toLocaleString("en-US", {
+        timeZone: "Asia/Kolkata"
+      }));
       const difference = targetDate.getTime() - currentIST.getTime();
-      
       if (difference > 0) {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((difference / 1000 / 60) % 60);
-        const seconds = Math.floor((difference / 1000) % 60);
-        
-        setTimeLeft({ days, hours, minutes, seconds });
+        const hours = Math.floor(difference / (1000 * 60 * 60) % 24);
+        const minutes = Math.floor(difference / 1000 / 60 % 60);
+        const seconds = Math.floor(difference / 1000 % 60);
+        setTimeLeft({
+          days,
+          hours,
+          minutes,
+          seconds
+        });
       } else {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0
+        });
       }
     };
 
     // Calculate immediately
     calculateTimeLeft();
-    
+
     // Update every second
     const timer = setInterval(calculateTimeLeft, 1000);
-
     return () => clearInterval(timer);
   }, []);
-
-  return (
-    <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
+  return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
       {/* Auth Buttons - Top Right */}
       <div className="absolute top-6 right-6 z-20">
         <AuthButtons />
@@ -63,11 +67,7 @@ const NewHeroSection = () => {
           <div className="space-y-8 animate-fade-in-up">
             {/* Logo */}
             <div className="flex justify-center lg:justify-start mb-6">
-              <img 
-                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
-                alt="NewGen Gurukul Logo"
-                className="h-32 w-auto animate-lamp-glow"
-              />
+              <img src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" alt="NewGen Gurukul Logo" className="h-32 w-auto animate-lamp-glow" />
             </div>
             
             <div className="space-y-6">
@@ -91,14 +91,12 @@ const NewHeroSection = () => {
               <div className="text-center space-y-4">
                 <p className="text-sm font-semibold text-startup-blue uppercase tracking-wide">Early Bird Ends In</p>
                 <div className="flex justify-center space-x-4">
-                  {Object.entries(timeLeft).map(([unit, value]) => (
-                    <div key={unit} className="text-center animate-countdown-pulse">
+                  {Object.entries(timeLeft).map(([unit, value]) => <div key={unit} className="text-center animate-countdown-pulse">
                       <div className="bg-white rounded-lg p-3 shadow-soft min-w-[60px]">
                         <div className="text-2xl font-bold text-saffron">{value.toString().padStart(2, '0')}</div>
                         <div className="text-xs text-muted-foreground uppercase">{unit}</div>
                       </div>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
@@ -150,7 +148,7 @@ const NewHeroSection = () => {
                 </div>
                 
                 <div className="text-center space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground">Ancient Wisdom + Modern Tools</h3>
+                  <h3 className="text-2xl font-bold text-foreground">Cardinal Wisdom + Modern Tools</h3>
                   <p className="text-muted-foreground">Where Gurukul tradition meets startup innovation</p>
                 </div>
                 
@@ -173,8 +171,6 @@ const NewHeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default NewHeroSection;

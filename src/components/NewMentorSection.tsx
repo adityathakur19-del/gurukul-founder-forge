@@ -1,16 +1,12 @@
 import { Users, Clock, Award } from "lucide-react";
-
 const NewMentorSection = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-muted/30 to-green-accent/5">
+  return <section className="py-20 bg-gradient-to-b from-muted/30 to-green-accent/5">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold">
               Meet Your{" "}
-              <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
-                Mentor
-              </span>
+              <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">Mentors</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Learn from a founder who's been in the trenches
@@ -109,8 +105,6 @@ const NewMentorSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default NewMentorSection;
