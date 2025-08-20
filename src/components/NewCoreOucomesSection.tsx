@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Target, TrendingUp, Calculator, Cog, Brain } from "lucide-react";
+import { Target, TrendingUp, Calculator, Users, Brain } from "lucide-react";
 
 const NewCoreOutcomesSection = () => {
   const outcomes = [
@@ -25,7 +25,7 @@ const NewCoreOutcomesSection = () => {
       color: "from-startup-blue to-guru-gold"
     },
     {
-      icon: Cog,
+      icon: Users,
       title: "Operations & Culture",
       description: "Build systems & team culture to scale without chaos",
       details: "Processes, hiring, and organizational design",
