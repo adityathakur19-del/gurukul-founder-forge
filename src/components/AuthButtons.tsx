@@ -1,38 +1,55 @@
 import { Button } from "@/components/ui/button";
 import { LogIn, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
 
 const AuthButtons = () => {
-  const handleGoogleSignIn = () => {
-    // TODO: Implement Google OAuth with Supabase
-    console.log('Google sign in clicked');
-  };
+  const navigate = useNavigate();
+  const { user, signOut } = useAuth();
 
-  const handleEmailSignIn = () => {
-    // TODO: Implement email/password auth with Supabase
-    console.log('Email sign in clicked');
+  const handleAuthAction = () => {
+    if (user) {
+      signOut();
+    } else {
+      navigate('/auth');
+    }
   };
 
   return (
     <div className="flex items-center space-x-3">
-      <Button 
-        variant="outline" 
-        size="sm"
-        onClick={handleEmailSignIn}
-        className="bg-white/90 backdrop-blur-sm border-saffron/20 text-foreground hover:bg-saffron/10 hover:text-foreground transition-all duration-300"
-      >
-        <Mail className="w-4 h-4 mr-2" />
-        Sign In
-      </Button>
-      
-      <Button 
-        variant="default"
-        size="sm"
-        onClick={handleGoogleSignIn}
-        className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white shadow-warm"
-      >
-        <LogIn className="w-4 h-4 mr-2" />
-        Google
-      </Button>
+      {user ? (
+        <Button 
+          variant="outline" 
+          size="sm"
+          onClick={handleAuthAction}
+          className="bg-white/90 backdrop-blur-sm border-saffron/20 text-foreground hover:bg-saffron/10 hover:text-foreground transition-all duration-300"
+        >
+          <LogIn className="w-4 h-4 mr-2" />
+          Sign Out
+        </Button>
+      ) : (
+        <>
+          <Button 
+            variant="outline" 
+            size="sm"
+            onClick={handleAuthAction}
+            className="bg-white/90 backdrop-blur-sm border-saffron/20 text-foreground hover:bg-saffron/10 hover:text-foreground transition-all duration-300"
+          >
+            <Mail className="w-4 h-4 mr-2" />
+            Sign In
+          </Button>
+          
+          <Button 
+            variant="default"
+            size="sm"
+            onClick={handleAuthAction}
+            className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white shadow-warm"
+          >
+            <LogIn className="w-4 h-4 mr-2" />
+            Get Started
+          </Button>
+        </>
+      )}
     </div>
   );
 };
