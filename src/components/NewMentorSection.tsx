@@ -55,19 +55,6 @@ const NewMentorSection = () => {
                   <div className="text-sm text-muted-foreground">Success Rate</div>
                 </div>
               </div>
-
-              {/* Philosophy */}
-              <div className="bg-gradient-to-r from-startup-blue/10 to-green-accent/10 rounded-xl p-6 border border-startup-blue/20">
-                <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                  <span className="mr-2 text-2xl">🕉️</span>
-                  Philosophy
-                </h4>
-                <p className="text-muted-foreground italic">
-                  "Blending cardinal Gurukul wisdom with modern startup tools. Practical, 
-                  founder-to-founder learning that combines time-tested principles with 
-                  cutting-edge methodologies."
-                </p>
-              </div>
             </div>
 
             {/* Mentor 2: Vaibhav Jaiswal */}
@@ -88,40 +75,6 @@ const NewMentorSection = () => {
                   Bringing real-world operational excellence and product strategy insights from building 
                   scalable business operations across multiple industries and functions.
                 </p>
-              </div>
-
-              {/* Visual Element */}
-              <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-wisdom bg-gradient-to-br from-startup-blue/20 to-green-accent/10 p-8">
-                  {/* Mentor Representation */}
-                  <div className="text-center space-y-6">
-                    <div className="w-32 h-32 bg-gradient-to-br from-startup-blue to-green-accent rounded-full flex items-center justify-center mx-auto">
-                      <span className="text-6xl text-white">👨‍💼</span>
-                    </div>
-                    
-                    <div className="space-y-4">
-                      <h4 className="text-xl font-bold text-foreground">Operations Excellence</h4>
-                      <p className="text-muted-foreground">
-                        Practical insights from building and scaling business operations
-                      </p>
-                    </div>
-                    
-                    <div className="flex justify-center space-x-6">
-                      <div className="text-center">
-                        <div className="text-2xl animate-wisdom-glow">⚙️</div>
-                        <div className="text-xs text-muted-foreground mt-1">Operations</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl animate-floating">📊</div>
-                        <div className="text-xs text-muted-foreground mt-1">Strategy</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl animate-lamp-glow">🎯</div>
-                        <div className="text-xs text-muted-foreground mt-1">Execution</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
