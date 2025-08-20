@@ -1,6 +1,8 @@
 import { useAuth } from '@/hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 
+// Hook for handling authentication-protected actions
+
 export const useAuthAction = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
