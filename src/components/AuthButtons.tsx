@@ -28,27 +28,15 @@ const AuthButtons = () => {
           Sign Out
         </Button>
       ) : (
-        <>
-          <Button 
-            variant="outline" 
-            size="sm"
-            onClick={handleAuthAction}
-            className="bg-white/90 backdrop-blur-sm border-saffron/20 text-foreground hover:bg-saffron/10 hover:text-foreground transition-all duration-300"
-          >
-            <Mail className="w-4 h-4 mr-2" />
-            Sign In
-          </Button>
-          
-          <Button 
-            variant="default"
-            size="sm"
-            onClick={handleAuthAction}
-            className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white shadow-warm"
-          >
-            <LogIn className="w-4 h-4 mr-2" />
-            Get Started
-          </Button>
-        </>
+        <Button 
+          variant="outline" 
+          size="sm"
+          onClick={handleAuthAction}
+          className="bg-white/90 backdrop-blur-sm border-saffron/20 text-foreground hover:bg-saffron/10 hover:text-foreground transition-all duration-300"
+        >
+          <Mail className="w-4 h-4 mr-2" />
+          Sign In
+        </Button>
       )}
     </div>
   );

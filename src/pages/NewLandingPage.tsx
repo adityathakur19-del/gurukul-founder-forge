@@ -25,7 +25,7 @@ const NewLandingPage = () => {
       <NewProofSection />
       <NewFAQSection />
       <NewFinalCTASection />
-      <FloatingCTA />
+      
     </main>
   );
 };

@@ -104,17 +104,6 @@ const NewJourneySection = () => {
               </p>
             </div>
           </div>
-
-          {/* CTA */}
-          <div className="text-center mt-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-startup-blue to-green-accent hover:from-green-accent hover:to-startup-blue text-white px-10 py-6 text-lg"
-              onClick={() => executeAuthAction()}
-            >
-              Yes! Reserve My Seat
-            </Button>
-          </div>
         </div>
       </div>
     </section>
