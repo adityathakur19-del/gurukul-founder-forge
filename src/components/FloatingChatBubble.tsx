@@ -95,7 +95,7 @@ const FloatingChatBubble = () => {
     <>
       {/* Chat Bubble */}
       {!isOpen && (
-        <div className="fixed bottom-6 left-6 z-50">
+        <div className="fixed bottom-6 right-6 z-50">
           <Button
             onClick={() => setIsOpen(true)}
             className="w-14 h-14 rounded-full bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
@@ -107,7 +107,7 @@ const FloatingChatBubble = () => {
 
       {/* Chat Interface */}
       {isOpen && (
-        <div className="fixed bottom-6 left-6 w-80 h-96 bg-background border border-border rounded-lg shadow-xl z-50 flex flex-col">
+        <div className="fixed bottom-6 right-6 w-80 h-96 bg-background border border-border rounded-lg shadow-xl z-50 flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-border bg-gradient-to-r from-saffron to-deep-saffron text-white rounded-t-lg">
             <div className="flex items-center space-x-2">
