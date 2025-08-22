@@ -49,13 +49,23 @@ const FloatingChatBubble = () => {
       timestamp: new Date()
     };
 
-    setMessages(prev => [...prev, userMessage]);
+    const currentMessages = [...messages, userMessage];
+    setMessages(currentMessages);
     setInputValue('');
     setIsLoading(true);
 
     try {
+      // Prepare conversation history for better context
+      const history = currentMessages.slice(1).map(msg => ({
+        role: msg.role,
+        content: msg.content
+      }));
+
       const { data, error } = await supabase.functions.invoke('chat-support', {
-        body: { message: inputValue }
+        body: { 
+          message: inputValue,
+          history: history
+        }
       });
 
       if (error) throw error;
@@ -63,7 +73,7 @@ const FloatingChatBubble = () => {
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: data.response,
+        content: data.message || data.response || 'Sorry, I could not process your request.',
         timestamp: new Date()
       };
 
