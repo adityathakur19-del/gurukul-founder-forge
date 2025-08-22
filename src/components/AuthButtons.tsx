@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { LogIn, Mail, MessageCircle } from "lucide-react";
+import { LogIn, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 
@@ -17,15 +17,6 @@ const AuthButtons = () => {
 
   return (
     <div className="flex items-center space-x-3">
-      <Button 
-        variant="outline" 
-        size="sm"
-        onClick={() => navigate('/chat')}
-        className="bg-white/90 backdrop-blur-sm border-saffron/20 text-foreground hover:bg-saffron/10 hover:text-foreground transition-all duration-300"
-      >
-        <MessageCircle className="w-4 h-4 mr-2" />
-        Chat / Support
-      </Button>
       
       {user ? (
         <Button 

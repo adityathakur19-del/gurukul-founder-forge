@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
+import FloatingChatBubble from "@/components/FloatingChatBubble";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import ChatSupport from "./pages/ChatSupport";
@@ -25,6 +26,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <FloatingChatBubble />
         </BrowserRouter>
       </TooltipProvider>
     </AuthProvider>
