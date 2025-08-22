@@ -55,19 +55,22 @@ serve(async (req) => {
       { role: 'user', content: message }
     ];
 
-    console.log('Sending request to OpenAI');
+    console.log('Sending request to OpenAI with messages:', messages.length, 'total messages');
+    const requestBody = {
+      model: 'gpt-4.1-2025-04-14',
+      messages: messages,
+      max_completion_tokens: 500,
+      // Note: temperature is not supported for GPT-4.1+ models
+    };
+    console.log('Request body:', JSON.stringify(requestBody, null, 2));
+
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${openAIApiKey}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        model: 'gpt-4.1-2025-04-14',
-        messages: messages,
-        max_completion_tokens: 500,
-        temperature: 0.7,
-      }),
+      body: JSON.stringify(requestBody),
     });
 
     if (!response.ok) {
