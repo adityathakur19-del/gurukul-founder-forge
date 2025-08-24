@@ -23,17 +23,18 @@ const App = () => (
           <Route path="/auth" element={
             <AuthProvider>
               <Auth />
+              <FloatingChatBubble />
             </AuthProvider>
           } />
           <Route path="/chat" element={
             <AuthProvider>
               <ChatSupport />
+              <FloatingChatBubble />
             </AuthProvider>
           } />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <FloatingChatBubble />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
