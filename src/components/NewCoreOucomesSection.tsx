@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Calculator, Settings, Brain } from "lucide-react";
 import { useAuthAction } from "@/hooks/useAuthAction";
@@ -68,7 +69,7 @@ const NewCoreOutcomesSection = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className={`w-16 h-16 bg-gradient-to-br ${outcome.color} rounded-xl flex items-center justify-center mb-6`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                    <IconComponent className="w-8 h-8 text-white" strokeWidth={2} />
                   </div>
                   
                   <h3 className="text-xl font-bold text-foreground mb-3">
