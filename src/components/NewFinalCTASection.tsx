@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Shield, Zap, Users } from "lucide-react";
 import { useAuthAction } from "@/hooks/useAuthAction";
@@ -30,9 +29,6 @@ const NewFinalCTASection = () => {
             <blockquote className="text-3xl md:text-5xl font-bold text-white leading-tight">
               "गुरुकुल की शिक्षा, व्यवसाय की सफलता"
             </blockquote>
-            <p className="text-xl text-white/90 italic">
-              "Knowledge learned in the Gurukul serves you for life"
-            </p>
           </div>
 
           {/* Urgency Indicators */}
