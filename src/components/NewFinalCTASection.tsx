@@ -5,7 +5,7 @@ import { useCountdown } from "@/hooks/useCountdown";
 
 const NewFinalCTASection = () => {
   const { executeAuthAction } = useAuthAction();
-  const timeLeft = useCountdown('2025-09-01T10:00:00+05:30');
+  const timeLeft = useCountdown('2025-09-13T10:00:00+05:30');
 
   return (
     <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">

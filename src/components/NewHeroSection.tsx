@@ -6,7 +6,7 @@ import { useCountdown } from "@/hooks/useCountdown";
 import AuthButtons from "@/components/AuthButtons";
 const NewHeroSection = () => {
   const { executeAuthAction } = useAuthAction();
-  const timeLeft = useCountdown('2025-09-01T10:00:00+05:30', true);
+  const timeLeft = useCountdown('2025-09-13T10:00:00+05:30', true);
   return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
       {/* Auth Buttons - Top Right */}
       <div className="absolute top-6 right-6 z-20">
