@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Shield, Zap, Users } from "lucide-react";
 import { useAuthAction } from "@/hooks/useAuthAction";
@@ -27,7 +28,7 @@ const NewFinalCTASection = () => {
               />
             </div>
             <blockquote className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              "गुरुकुल में सीखा गया ज्ञान जीवन भर काम आता है"
+              "गुरुकुल की शिक्षा, व्यवसाय की सफलता"
             </blockquote>
             <p className="text-xl text-white/90 italic">
               "Knowledge learned in the Gurukul serves you for life"
