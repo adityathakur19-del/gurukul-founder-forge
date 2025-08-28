@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Target, User, Building, Users, Globe } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const NewWhoShouldAttendSection = () => {
+  const { executeAuthAction } = useAuthAction();
   const shouldAttend = [
     {
       icon: Target,
@@ -110,7 +112,11 @@ const NewWhoShouldAttendSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-16">
-            <Button size="lg" className="bg-gradient-to-r from-green-accent to-startup-blue hover:from-startup-blue hover:to-green-accent text-white px-8 py-6 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-green-accent to-startup-blue hover:from-startup-blue hover:to-green-accent text-white px-8 py-6 text-lg"
+              onClick={() => executeAuthAction()}
+            >
               I Want These Results
             </Button>
           </div>

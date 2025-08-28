@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Calculator, Settings, Brain } from "lucide-react";
+import { useAuthAction } from "@/hooks/useAuthAction";
 
 const NewCoreOutcomesSection = () => {
+  const { executeAuthAction } = useAuthAction();
   const outcomes = [
     {
       icon: Target,
@@ -98,7 +100,11 @@ const NewCoreOutcomesSection = () => {
 
           {/* CTA */}
           <div className="text-center">
-            <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-10 py-6 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-10 py-6 text-lg"
+              onClick={() => executeAuthAction()}
+            >
               Give Me the Templates + Tools
             </Button>
           </div>
