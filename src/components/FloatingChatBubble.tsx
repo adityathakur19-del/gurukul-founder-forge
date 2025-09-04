@@ -3,7 +3,6 @@ import { MessageCircle, X, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 interface Message {
   id: string;
@@ -55,34 +54,24 @@ const FloatingChatBubble = () => {
     setIsLoading(true);
 
     try {
-      // Prepare conversation history for better context
-      const history = currentMessages.slice(1).map(msg => ({
-        role: msg.role,
-        content: msg.content
-      }));
-
-      const { data, error } = await supabase.functions.invoke('chat-support', {
-        body: { 
-          message: inputValue,
-          history: history
-        }
+      // Simple contact action - redirect to email
+      const emailSubject = encodeURIComponent("Support Query - NewGen Gurukul");
+      const emailBody = encodeURIComponent(inputValue);
+      window.location.href = `mailto:support@newgengurukul.com?subject=${emailSubject}&body=${emailBody}`;
+      
+      // Clear message and close chat
+      setInputValue('');
+      setIsOpen(false);
+      
+      toast({
+        title: "Email opened",
+        description: "Your default email client should open with your message.",
       });
-
-      if (error) throw error;
-
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: 'assistant',
-        content: data.message || data.response || 'Sorry, I could not process your request.',
-        timestamp: new Date()
-      };
-
-      setMessages(prev => [...prev, assistantMessage]);
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('Error opening email:', error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: "Could not open email client. Please contact support@newgengurukul.com directly.",
         variant: "destructive",
       });
     } finally {

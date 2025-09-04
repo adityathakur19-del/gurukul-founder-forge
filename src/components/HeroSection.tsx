@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Users, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 import heroImage from "@/assets/hero-founder.jpg";
 
 const HeroSection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-muted flex items-center justify-center overflow-hidden">
       {/* Animated Background Pattern */}
@@ -59,7 +59,7 @@ const HeroSection = () => {
                 variant="hero" 
                 size="lg" 
                 className="w-full text-xl px-12 py-6 h-auto mb-4"
-                onClick={() => executeAuthAction()}
+                onClick={redirectToPayment}
               >
                 <CheckCircle className="w-6 h-6" />
                 Reserve My Seat – Only 50 Spots

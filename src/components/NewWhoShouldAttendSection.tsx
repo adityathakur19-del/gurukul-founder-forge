@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Target, User, Building, Users, Globe } from "lucide-react";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 
 const NewWhoShouldAttendSection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   const shouldAttend = [
     {
       icon: Target,
@@ -115,7 +115,7 @@ const NewWhoShouldAttendSection = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-green-accent to-startup-blue hover:from-startup-blue hover:to-green-accent text-white px-8 py-6 text-lg"
-              onClick={() => executeAuthAction()}
+              onClick={redirectToPayment}
             >
               I Want These Results
             </Button>

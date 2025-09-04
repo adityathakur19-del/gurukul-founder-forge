@@ -1,9 +1,9 @@
 import { Gift, Users, Clock, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 
 const BonusSection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   const bonuses = [
     {
       icon: Gift,
@@ -98,7 +98,7 @@ const BonusSection = () => {
                 variant="cta" 
                 className="w-full mt-6" 
                 size="lg"
-                onClick={() => executeAuthAction()}
+                onClick={redirectToPayment}
               >
                 <Tag className="w-5 h-5" />
                 Claim This Deal - Only 3 Seats Left

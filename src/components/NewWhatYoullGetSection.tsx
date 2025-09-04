@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { FileText, Brain, Video, Award, Users, Phone } from "lucide-react";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 
 const NewWhatYoullGetSection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   const inclusions = [
     {
       icon: FileText,
@@ -154,7 +154,7 @@ const NewWhatYoullGetSection = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-10 py-6 text-lg"
-              onClick={() => executeAuthAction()}
+              onClick={redirectToPayment}
             >
               Yes, I Want Access to These Resources
             </Button>

@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Shield, Zap, Users } from "lucide-react";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 import { useCountdown } from "@/hooks/useCountdown";
 
 const NewFinalCTASection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   const timeLeft = useCountdown('2025-09-13T10:00:00+05:30');
 
   return (
@@ -71,7 +71,7 @@ const NewFinalCTASection = () => {
             <Button 
               size="lg" 
               className="bg-white text-saffron hover:bg-white/90 hover:text-deep-saffron border-2 border-white text-2xl px-20 py-8 h-auto font-bold shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-300 animate-pulse-glow"
-              onClick={() => executeAuthAction()}
+              onClick={redirectToPayment}
             >
               <CheckCircle className="w-8 h-8 mr-3" />
               Yes! Reserve My Seat

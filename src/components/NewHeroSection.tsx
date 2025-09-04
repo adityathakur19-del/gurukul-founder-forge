@@ -1,17 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Calendar, Star, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 import { useCountdown } from "@/hooks/useCountdown";
-import AuthButtons from "@/components/AuthButtons";
 const NewHeroSection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   const timeLeft = useCountdown('2025-09-13T10:00:00+05:30', true);
   return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
-      {/* Auth Buttons - Top Right */}
-      <div className="absolute top-6 right-6 z-20">
-        <AuthButtons />
-      </div>
       
       {/* Traditional Background Elements */}
       <div className="absolute inset-0 opacity-5 bg-mandala-pattern"></div>
@@ -73,7 +68,7 @@ const NewHeroSection = () => {
               <Button 
                 size="lg" 
                 className="w-full text-xl px-12 py-6 h-auto mb-4 bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron"
-                onClick={() => executeAuthAction()}
+                onClick={redirectToPayment}
               >
                 <CheckCircle className="w-6 h-6 mr-2" />
                 Reserve My Seat – Only 50 Spots

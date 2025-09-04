@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight, Users, Calendar, Rocket, Trophy } from "lucide-react";
-import { useAuthAction } from "@/hooks/useAuthAction";
+import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 
 const NewJourneySection = () => {
-  const { executeAuthAction } = useAuthAction();
+  const { redirectToPayment } = usePaymentRedirect();
   const journeySteps = [
     {
       icon: Users,
