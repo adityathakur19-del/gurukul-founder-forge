@@ -4,7 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 import { useCountdown } from "@/hooks/useCountdown";
 const NewHeroSection = () => {
-  const { redirectToPayment } = usePaymentRedirect();
+  const {
+    redirectToPayment
+  } = usePaymentRedirect();
   const timeLeft = useCountdown('2025-09-13T10:00:00+05:30', true);
   return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
       
@@ -59,17 +61,13 @@ const NewHeroSection = () => {
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-saffron/20 shadow-warm">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="text-2xl text-startup-gray line-through">₹7,000</div>
-                <div className="text-5xl font-bold text-saffron">₹4,999</div>
+                <div className="text-5xl font-bold text-saffron">₹7,499</div>
                 <div className="bg-green-accent text-white px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow">
                   Early Bird Offer
                 </div>
               </div>
               
-              <Button 
-                size="lg" 
-                className="w-full text-xl px-12 py-6 h-auto mb-4 bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron"
-                onClick={redirectToPayment}
-              >
+              <Button size="lg" className="w-full text-xl px-12 py-6 h-auto mb-4 bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron" onClick={redirectToPayment}>
                 <CheckCircle className="w-6 h-6 mr-2" />
                 Reserve My Seat – Only 50 Spots
               </Button>
@@ -77,12 +75,12 @@ const NewHeroSection = () => {
               <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-1">
                   <Users className="w-4 h-4" />
-                  <span>47 founders registered</span>
+                  <span>40+ founders registered</span>
                 </div>
                 <span>•</span>
                 <div className="flex items-center space-x-1">
                   <Star className="w-4 h-4 text-guru-gold fill-current" />
-                  <span>4.9/5 rating</span>
+                  <span>4.6/5 rating</span>
                 </div>
               </div>
             </div>
