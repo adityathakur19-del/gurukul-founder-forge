@@ -55,10 +55,10 @@ const NewHeroSection = () => {
 
             {/* Pricing Section */}
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-saffron/20 shadow-warm">
-              <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 mb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-4 text-center">
                 <div className="text-xl sm:text-2xl text-startup-gray line-through">₹15,000</div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-saffron">₹7,499</div>
-                <div className="bg-green-accent text-white px-3 sm:px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow inline-block w-fit">
+                <div className="bg-green-accent text-white px-3 sm:px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow inline-block w-fit mx-auto sm:mx-0">
                   Early Bird Offer
                 </div>
               </div>
