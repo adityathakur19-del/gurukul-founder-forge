@@ -31,11 +31,11 @@ const NewBonusesSection = () => {
                 
                   <div className="space-y-4">
                     <div className="flex items-center justify-center space-x-4">
-                      <span className="text-3xl text-startup-gray line-through">₹15,000</span>
+                      <span className="text-3xl text-startup-gray line-through">₹51,999</span>
                       <span className="text-6xl font-bold text-saffron">₹7,499</span>
                     </div>
                     <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
-                      Save 81.25%
+                      Save 85%
                     </div>
                   </div>
                   
@@ -57,27 +57,42 @@ const NewBonusesSection = () => {
             <div className="space-y-6 animate-fade-in-up delay-300">
               <h3 className="text-2xl font-bold text-foreground mb-6 text-center text-lg">What You're Getting:</h3>
               
-              <div className="space-y-4">
-                <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                  <span className="font-medium text-foreground text-lg">Cost of 2-day workshop</span>
-                  <span className="font-bold text-saffron text-lg">₹7,499</span>
-                </div>
-                
-                <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                  <span className="font-medium text-foreground text-lg">1:1 Expert call cost</span>
-                  <span className="font-bold text-saffron text-lg">₹10,000</span>
-                </div>
-                
-                <div className="border-t-2 border-saffron/20 pt-4">
-                  <div className="flex justify-between items-center p-4 bg-gradient-to-r from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/30">
-                    <span className="text-xl font-bold text-foreground">Total Value</span>
-                    <span className="text-2xl font-bold text-saffron">₹40,000</span>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
+                    <span className="font-medium text-foreground text-lg">Cost of 2-day workshop</span>
+                    <span className="font-bold text-saffron text-lg">₹14,999</span>
                   </div>
-                </div>
-                
-                <div className="text-center text-xl font-semibold text-green-accent">
-                  You pay only: ₹7,500 – Save 81.25%
-                </div>
+                  
+                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
+                    <span className="font-medium text-foreground text-lg">Templates and Frameworks cost</span>
+                    <span className="font-bold text-saffron text-lg">₹15,000</span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
+                    <span className="font-medium text-foreground text-lg">AI Tools shortlist and tips cost</span>
+                    <span className="font-bold text-saffron text-lg">₹10,000</span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
+                    <span className="font-medium text-foreground text-lg">1:1 Expert call cost</span>
+                    <span className="font-bold text-saffron text-lg">₹10,000</span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
+                    <span className="font-medium text-foreground text-lg">Session Recording cost</span>
+                    <span className="font-bold text-saffron text-lg">₹2,000</span>
+                  </div>
+                  
+                  <div className="border-t-2 border-saffron/20 pt-4">
+                    <div className="flex justify-between items-center p-4 bg-gradient-to-r from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/30">
+                      <span className="text-xl font-bold text-foreground">Total Value</span>
+                      <span className="text-2xl font-bold text-saffron">₹51,999</span>
+                    </div>
+                  </div>
+                  
+                  <div className="text-center text-xl font-semibold text-green-accent">
+                    You pay only: ₹7,499 – Save 85%
+                  </div>
               </div>
             </div>
           </div>
