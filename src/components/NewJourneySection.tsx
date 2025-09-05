@@ -9,7 +9,7 @@ const NewJourneySection = () => {
       icon: Users,
       title: "Join",
       subtitle: "Reserve Your Seat",
-      description: "₹4,999 Early Bird. Receive pre-read pack + starter templates",
+      description: "₹7,499 Early Bird. Receive pre-read pack + starter templates",
       details: "Get immediate access to foundation materials",
       color: "from-saffron to-deep-saffron"
     },
@@ -25,7 +25,7 @@ const NewJourneySection = () => {
       icon: Rocket,
       title: "Apply",
       subtitle: "Next 90 Days",
-      description: "Execute frameworks, templates, and book your 15-min 1:1 expert call",
+      description: "Execute frameworks, templates, and book your 30-min 1:1 complementary expert call",
       details: "Personalized guidance for implementation",
       color: "from-startup-blue to-guru-gold"
     },
@@ -51,7 +51,7 @@ const NewJourneySection = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              2 Days → 90 Days → Sustainable Growth
+              2 Days → 90 Days → Revenue Engine
             </p>
           </div>
 

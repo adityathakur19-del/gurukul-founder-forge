@@ -9,7 +9,7 @@ const NewMentorSection = () => {
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">Mentors</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Learn from a founder who's been in the trenches
+              Learn from founders who've been in the trenches
             </p>
           </div>
 
@@ -36,21 +36,27 @@ const NewMentorSection = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4">
+              <div className="flex justify-center space-x-8">
                 <div className="text-center p-4 bg-gradient-to-br from-green-accent/10 to-startup-blue/10 rounded-xl border border-green-accent/20">
-                  <Users className="w-8 h-8 text-green-accent mx-auto mb-2" />
+                  <div className="flex justify-center mb-2">
+                    <Users className="w-8 h-8 text-green-accent" />
+                  </div>
                   <div className="text-2xl font-bold text-green-accent">150+</div>
                   <div className="text-sm text-muted-foreground">Founders Mentored</div>
                 </div>
                 
                 <div className="text-center p-4 bg-gradient-to-br from-guru-gold/10 to-saffron/10 rounded-xl border border-guru-gold/20">
-                  <Clock className="w-8 h-8 text-guru-gold mx-auto mb-2" />
+                  <div className="flex justify-center mb-2">
+                    <Clock className="w-8 h-8 text-guru-gold" />
+                  </div>
                   <div className="text-2xl font-bold text-guru-gold">30+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 
                 <div className="text-center p-4 bg-gradient-to-br from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/20">
-                  <Award className="w-8 h-8 text-saffron mx-auto mb-2" />
+                  <div className="flex justify-center mb-2">
+                    <Award className="w-8 h-8 text-saffron" />
+                  </div>
                   <div className="text-2xl font-bold text-saffron">100%</div>
                   <div className="text-sm text-muted-foreground">Success Rate</div>
                 </div>

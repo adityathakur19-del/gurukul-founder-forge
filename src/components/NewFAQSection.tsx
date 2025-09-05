@@ -25,7 +25,7 @@ const NewFAQSection = () => {
     },
     {
       question: "What if I can't implement everything immediately?",
-      answer: "That's exactly why we include a 15-min 1:1 expert call post-workshop. You can get personalized guidance on your specific challenges and prioritize what to implement first."
+      answer: "That's exactly why we include a 30-min 1:1 expert call post-workshop. You can get personalized guidance on your specific challenges and prioritize what to implement first."
     },
     {
       question: "Is there a refund policy?",
@@ -79,11 +79,6 @@ const NewFAQSection = () => {
               <div className="text-3xl mb-3">🔒</div>
               <h4 className="font-semibold text-foreground mb-2">Secure Payment</h4>
               <p className="text-sm text-muted-foreground">SSL encrypted checkout</p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-soft">
-              <div className="text-3xl mb-3">📧</div>
-              <h4 className="font-semibold text-foreground mb-2">Instant Access</h4>
-              <p className="text-sm text-muted-foreground">Immediate confirmation</p>
             </div>
             <div className="text-center p-6 bg-white rounded-xl shadow-soft">
               <div className="text-3xl mb-3">💯</div>

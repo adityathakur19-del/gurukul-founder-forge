@@ -17,7 +17,7 @@ const NewCoreOutcomesSection = () => {
       icon: TrendingUp,
       title: "Sales",
       description: "Go from zero leads to first paying customers",
-      details: "GTM plan, messaging, and conversion frameworks",
+      details: "GTM plan, messaging, and conversion frameworks. Specific B2B and B2C targeting framework.",
       color: "from-green-accent to-startup-blue"
     },
     {
@@ -68,13 +68,15 @@ const NewCoreOutcomesSection = () => {
                   className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-warm transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className={`w-16 h-16 bg-gradient-to-br ${outcome.color} rounded-xl flex items-center justify-center mb-6`}>
-                    <IconComponent className="w-8 h-8 text-white" strokeWidth={2} />
+                  <div className="flex flex-col items-center mb-6">
+                    <div className={`w-16 h-16 bg-gradient-to-br ${outcome.color} rounded-xl flex items-center justify-center mb-4`}>
+                      <IconComponent className="w-8 h-8 text-white" strokeWidth={2} />
+                    </div>
+                    
+                    <h3 className="text-xl font-bold text-foreground text-center">
+                      {outcome.title}
+                    </h3>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-foreground mb-3">
-                    {outcome.title}
-                  </h3>
                   
                   <p className="text-lg font-semibold text-saffron mb-3">
                     {outcome.description}

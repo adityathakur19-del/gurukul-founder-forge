@@ -103,23 +103,6 @@ const NewProofSection = () => {
             </div>
           </div>
 
-          {/* Startup Logos */}
-          <div className="text-center space-y-8">
-            <h3 className="text-xl font-semibold text-muted-foreground">
-              Startups We've Mentored
-            </h3>
-            <div className="flex justify-center items-center space-x-8 flex-wrap gap-4">
-              {logos.map((logo, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center space-x-2 bg-white rounded-lg px-4 py-2 shadow-soft hover:shadow-warm transition-all duration-300"
-                >
-                  <span className="text-2xl">{logo.symbol}</span>
-                  <span className="text-sm font-medium text-muted-foreground">{logo.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

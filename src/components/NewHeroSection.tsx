@@ -7,7 +7,7 @@ const NewHeroSection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  const timeLeft = useCountdown('2025-09-13T10:00:00+05:30', true);
+  const timeLeft = useCountdown('2025-09-27T10:00:00+05:30', true);
   return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden bg-lotus-pattern">
       
       {/* Traditional Background Elements */}
@@ -28,17 +28,15 @@ const NewHeroSection = () => {
             
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Build Your Startup{" "}
+                From Idea to{" "}
                 <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
-                  Right the First Time
+                  Revenue Engine
                 </span>{" "}
-                – In 2 Days
+                – Master Sales, HR, Ops, Funding, Strategy and AI tools from the founders who've built & scaled successfully.
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                From vision to funding – master{" "}
-                <span className="font-semibold text-foreground">strategy, sales, finance, AI, and culture</span>{" "}
-                with founders who've built and scaled successfully.
+                Business Function Templates and AI tools live demo included.
               </p>
             </div>
 
@@ -60,7 +58,7 @@ const NewHeroSection = () => {
             {/* Pricing Section */}
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-saffron/20 shadow-warm">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="text-2xl text-startup-gray line-through">₹7,000</div>
+                <div className="text-2xl text-startup-gray line-through">₹15,000</div>
                 <div className="text-5xl font-bold text-saffron">₹7,499</div>
                 <div className="bg-green-accent text-white px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow">
                   Early Bird Offer

@@ -9,10 +9,10 @@ const NewWhatYoullGetSection = () => {
       icon: FileText,
       title: "Proven Frameworks & Templates",
       items: [
-        "GTM strategy canvas",
-        "Sales funnel blueprints", 
-        "Financial planning models",
-        "Operations & HR frameworks"
+        "Business Canvas model",
+        "7Ps of marketing", 
+        "Financial Modelling for Startups",
+        "Scalable System Framework"
       ],
       highlight: "Worth ₹15,000 - Included Free"
     },
@@ -20,9 +20,9 @@ const NewWhatYoullGetSection = () => {
       icon: Brain,
       title: "Curated AI Tools List",
       items: [
+        "Notion AI, Otter.ai, Durable, ChatGPT",
+        "Perplexity, Canva, Figma",
         "Research & market analysis tools",
-        "Content & outreach automation",
-        "Decision-making frameworks",
         "50+ hours of trial & error saved"
       ],
       highlight: "Exclusive Startup AI Toolkit"
@@ -44,7 +44,7 @@ const NewWhatYoullGetSection = () => {
     {
       icon: Phone,
       title: "Exclusive 1:1 Expert Call",
-      description: "15-min post-workshop call for personalized guidance on your specific challenges",
+      description: "Complementary 30-min post-workshop call for personalized guidance on your specific challenges",
       highlight: true
     },
     {

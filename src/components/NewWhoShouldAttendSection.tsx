@@ -103,8 +103,7 @@ const NewWhoShouldAttendSection = () => {
                   <h4 className="font-semibold text-foreground">Industry Agnostic</h4>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Our frameworks work for tech, non-tech, service, product, B2B, and B2C businesses. 
-                  40% of our past mentees were non-tech founders.
+                  Industry Agnostic. Our frameworks work for tech, non-tech, service, product, B2B, and B2C businesses.
                 </p>
               </div>
             </div>
