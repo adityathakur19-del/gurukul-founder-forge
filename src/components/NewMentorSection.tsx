@@ -37,7 +37,7 @@ const NewMentorSection = () => {
 
               {/* Stats */}
               <div className="flex justify-between space-x-2">
-                <div className="text-center p-4 bg-gradient-to-br from-green-accent/10 to-startup-blue/10 rounded-xl border border-green-accent/20">
+                <div className="text-center p-4 bg-gradient-to-br from-green-accent/10 to-startup-blue/10 rounded-xl border border-green-accent/20 px-[134px]">
                   <div className="flex justify-center mb-2">
                     <Users className="w-8 h-8 text-green-accent" />
                   </div>
@@ -45,7 +45,7 @@ const NewMentorSection = () => {
                   <div className="text-sm text-muted-foreground">Founders Mentored</div>
                 </div>
                 
-                <div className="text-center p-4 bg-gradient-to-br from-guru-gold/10 to-saffron/10 rounded-xl border border-guru-gold/20">
+                <div className="text-center p-4 bg-gradient-to-br from-guru-gold/10 to-saffron/10 rounded-xl border border-guru-gold/20 px-[128px]">
                   <div className="flex justify-center mb-2">
                     <Clock className="w-8 h-8 text-guru-gold" />
                   </div>
@@ -53,7 +53,7 @@ const NewMentorSection = () => {
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 
-                <div className="text-center p-4 bg-gradient-to-br from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/20">
+                <div className="text-center p-4 bg-gradient-to-br from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/20 px-[121px]">
                   <div className="flex justify-center mb-2">
                     <Award className="w-8 h-8 text-saffron" />
                   </div>
