@@ -17,7 +17,7 @@ const NewProofSection = () => {
       result: "Clear execution roadmap"
     },
     {
-      quote: "The frameworks are utilitarian and immediately applicable. Vaibhav helped me understand my numbers and I now speak confidently to investors.",
+      quote: "Vabhav's frameworks helped me set up robust processes and understand my numbers. I now speak confidently to investors",
       name: "Meera Patel",
       role: "Founder, SaaS Product",
       rating: 5,
