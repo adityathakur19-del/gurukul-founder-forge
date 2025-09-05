@@ -32,10 +32,7 @@ const NewHeroSection = () => {
                 <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                   the First Time
                 </span>{" "}
-                –{" "}
-                <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
-                  In 2 Days
-                </span>
+                – In 2 Days
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
