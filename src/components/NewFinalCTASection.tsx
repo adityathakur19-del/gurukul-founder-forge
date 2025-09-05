@@ -69,7 +69,7 @@ const NewFinalCTASection = () => {
             </Button>
             
             <div className="text-white/90 space-y-2">
-              <p className="text-lg">🔒 Secure Payment • 📧 Instant Confirmation • 💯 90-Day Plan Guarantee</p>
+              <p className="text-lg">🔒 Secure Payment • 💯 90-Day Plan Guarantee</p>
               <p className="text-sm opacity-75">Join the Gurukul of Modern Entrepreneurs</p>
             </div>
           </div>
