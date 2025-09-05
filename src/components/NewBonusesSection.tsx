@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Tag, Users as UsersIcon, Gift, Clock } from "lucide-react";
 import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
-
 const NewBonusesSection = () => {
-  const { redirectToPayment } = usePaymentRedirect();
-  return (
-    <section className="py-20 bg-gradient-to-b from-warm-white to-green-accent/5">
+  const {
+    redirectToPayment
+  } = usePaymentRedirect();
+  return <section className="py-20 bg-gradient-to-b from-warm-white to-green-accent/5">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
@@ -112,21 +112,13 @@ const NewBonusesSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-12 py-6 text-xl"
-              onClick={redirectToPayment}
-            >
+            <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-12 py-6 text-xl" onClick={redirectToPayment}>
               Claim Early Bird ₹7,499/-
             </Button>
-            <p className="text-sm text-muted-foreground mt-4">
-              🔒 Secure payment • 📧 Instant confirmation • 💯 90-day plan guarantee
-            </p>
+            <p className="text-sm text-muted-foreground mt-4">🔒 Secure payment • 💯 90-day plan guarantee</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default NewBonusesSection;
