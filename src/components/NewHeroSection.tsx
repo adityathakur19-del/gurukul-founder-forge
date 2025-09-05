@@ -28,15 +28,14 @@ const NewHeroSection = () => {
             
             <div className="space-y-6">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                From Idea to{" "}
+                Build Your Startup Right the First Time –{" "}
                 <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
-                  Revenue Engine
-                </span>{" "}
-                – Master Sales, HR, Ops, Funding, Strategy and AI tools from the founders who've built & scaled successfully.
+                  In 2 Days
+                </span>
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                Business Function Templates and AI tools live demo included.
+                From vision to funding – master strategy, sales, finance, AI, and culture with founders who've built and scaled successfully.
               </p>
             </div>
 
