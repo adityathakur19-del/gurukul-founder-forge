@@ -1,24 +1,24 @@
 
 import { Button } from "@/components/ui/button";
-import { Target, TrendingUp, Calculator, Settings, Brain } from "lucide-react";
+import { TrendingUp, Calculator, Brain } from "lucide-react";
 import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 
 const NewCoreOutcomesSection = () => {
   const { redirectToPayment } = usePaymentRedirect();
   const outcomes = [
     {
-      icon: Target,
-      title: "Strategy",
-      description: "Turn your vision into a 90-day execution roadmap",
-      details: "Clear milestones, priorities, and actionable steps",
-      color: "from-saffron to-deep-saffron"
+      icon: Brain,
+      title: "AI Tools",
+      description: "Save hours and make smarter decisions",
+      details: "Curated AI toolkit for research, outreach, and automation",
+      color: "from-deep-saffron to-green-accent"
     },
     {
       icon: TrendingUp,
-      title: "Sales",
-      description: "Go from zero leads to first paying customers",
-      details: "GTM plan, messaging, and conversion frameworks. Specific B2B and B2C targeting framework.",
-      color: "from-green-accent to-startup-blue"
+      title: "Strategy & Sales",
+      description: "Turn vision into execution roadmap + first paying customers",
+      details: "90-day milestones, GTM plan, messaging, and B2B/B2C targeting frameworks",
+      color: "from-saffron to-startup-blue"
     },
     {
       icon: Calculator,
@@ -26,20 +26,6 @@ const NewCoreOutcomesSection = () => {
       description: "Understand numbers & speak to investors",
       details: "Financial planning, metrics, and pitch readiness",
       color: "from-startup-blue to-guru-gold"
-    },
-    {
-      icon: Settings,
-      title: "Operations & Culture",
-      description: "Build systems & team culture to scale without chaos",
-      details: "Processes, hiring, and organizational design",
-      color: "from-guru-gold to-saffron"
-    },
-    {
-      icon: Brain,
-      title: "AI Tools",
-      description: "Save hours and make smarter decisions",
-      details: "Curated AI toolkit for research, outreach, and automation",
-      color: "from-deep-saffron to-green-accent"
     }
   ];
 
@@ -49,7 +35,7 @@ const NewCoreOutcomesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold">
-              Five Core{" "}
+              Three Core{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                 Takeaways
               </span>
