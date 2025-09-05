@@ -104,9 +104,7 @@ const NewBonusesSection = () => {
                 <UsersIcon className="w-6 h-6 text-startup-blue" />
                 <h4 className="text-xl font-semibold text-foreground">Bring Your Co-Founder</h4>
               </div>
-              <p className="text-muted-foreground mb-3 text-lg">
-                Second seat for just ₹6,499 extra (instead of ₹7,499). For details contact us at contact@newgengurukul.com.
-              </p>
+              <p className="text-muted-foreground mb-3 text-lg">Second seat for just ₹6,499 extra (instead of ₹7,499). To avail the offer, contact us at contact@newgengurukul.com.</p>
             </div>
           </div>
 
