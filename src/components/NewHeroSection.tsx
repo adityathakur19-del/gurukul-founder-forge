@@ -76,7 +76,7 @@ const NewHeroSection = () => {
                 <span>•</span>
                 <div className="flex items-center space-x-1">
                   <Star className="w-4 h-4 text-guru-gold fill-current" />
-                  <span>4.6/5 rating</span>
+                  <span>4.9/5 rating</span>
                 </div>
               </div>
             </div>
