@@ -70,7 +70,11 @@ const NewMentorSection = () => {
                 <p className="text-xl text-saffron font-semibold">Business, Operations and Product Leader</p>
                 
                 <div className="bg-gradient-to-r from-startup-blue/10 to-green-accent/10 rounded-xl p-6 border border-startup-blue/20">
-                  <p className="text-lg text-foreground leading-relaxed italic">"In my decade plus of experience across industries and business functions, I've donned multiple hats. I was fortunate to build and scale business streams from scratch. I now want to share stories behind these battle scars"</p>
+                  <p className="text-lg text-foreground leading-relaxed italic">
+                    "In my decade plus of experience across industries and business functions, I've donned various hats. 
+                    I was fortunate to build and scale business streams from scratch. I now want to share stories 
+                    behind these battle scars"
+                  </p>
                 </div>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed">
