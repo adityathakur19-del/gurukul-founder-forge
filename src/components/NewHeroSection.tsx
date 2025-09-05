@@ -27,7 +27,7 @@ const NewHeroSection = () => {
             </div>
             
             <div className="space-y-6">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Build Your Startup Right the First Time –{" "}
                 <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                   In 2 Days
