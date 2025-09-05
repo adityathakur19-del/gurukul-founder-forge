@@ -36,7 +36,7 @@ const NewMentorSection = () => {
               </div>
 
               {/* Stats */}
-              <div className="flex justify-center space-x-8">
+              <div className="flex justify-between space-x-2">
                 <div className="text-center p-4 bg-gradient-to-br from-green-accent/10 to-startup-blue/10 rounded-xl border border-green-accent/20">
                   <div className="flex justify-center mb-2">
                     <Users className="w-8 h-8 text-green-accent" />
