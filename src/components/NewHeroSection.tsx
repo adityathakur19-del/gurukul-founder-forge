@@ -100,8 +100,8 @@ const NewHeroSection = () => {
                 </div>
                 
                 <div className="text-center space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground">Cardinal Wisdom + Modern Tools</h3>
-                  <p className="text-muted-foreground">Where Gurukul tradition meets startup innovation</p>
+                  <h3 className="text-3xl font-bold text-foreground">Cardinal Wisdom + Modern Tools</h3>
+                  <p className="text-lg text-muted-foreground">Where Gurukul tradition meets startup innovation</p>
                 </div>
                 
                 <div className="flex justify-center space-x-6">
