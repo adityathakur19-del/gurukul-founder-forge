@@ -2,13 +2,12 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Shield, Zap, Users } from "lucide-react";
 import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 import { useCountdown } from "@/hooks/useCountdown";
-
 const NewFinalCTASection = () => {
-  const { redirectToPayment } = usePaymentRedirect();
+  const {
+    redirectToPayment
+  } = usePaymentRedirect();
   const timeLeft = useCountdown('2025-09-13T10:00:00+05:30');
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
       {/* Traditional Background Pattern */}
       <div className="absolute inset-0 opacity-10 bg-mandala-pattern"></div>
       <div className="absolute inset-0 opacity-5">
@@ -20,11 +19,7 @@ const NewFinalCTASection = () => {
           {/* Logo and Traditional Wisdom Quote */}
           <div className="space-y-6">
             <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
-                alt="NewGen Gurukul Logo"
-                className="h-20 w-auto opacity-90 animate-wisdom-glow"
-              />
+              <img src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" alt="NewGen Gurukul Logo" className="h-20 w-auto opacity-90 animate-wisdom-glow" />
             </div>
             <blockquote className="text-3xl md:text-5xl font-bold text-white leading-tight">
               "गुरुकुल की शिक्षा, व्यवसाय की सफलता"
@@ -56,7 +51,7 @@ const NewFinalCTASection = () => {
               Join 50 Founders in Building Your Repeatable Revenue Engine
             </h3>
             <div className="flex items-center justify-center space-x-4 text-white">
-              <span className="text-4xl font-bold">₹4,999</span>
+              <span className="text-4xl font-bold">₹7,499</span>
               <span className="bg-green-accent px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow">
                 Early Bird Offer
               </span>
@@ -68,11 +63,7 @@ const NewFinalCTASection = () => {
 
           {/* Final CTA Button */}
           <div className="space-y-6">
-            <Button 
-              size="lg" 
-              className="bg-white text-saffron hover:bg-white/90 hover:text-deep-saffron border-2 border-white text-2xl px-20 py-8 h-auto font-bold shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-300 animate-pulse-glow"
-              onClick={redirectToPayment}
-            >
+            <Button size="lg" className="bg-white text-saffron hover:bg-white/90 hover:text-deep-saffron border-2 border-white text-2xl px-20 py-8 h-auto font-bold shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-300 animate-pulse-glow" onClick={redirectToPayment}>
               <CheckCircle className="w-8 h-8 mr-3" />
               Yes! Reserve My Seat
             </Button>
@@ -89,7 +80,7 @@ const NewFinalCTASection = () => {
             <div className="grid md:grid-cols-2 gap-4 text-white/90 text-sm">
               <div className="flex items-center space-x-2">
                 <span>📖</span>
-                <span>Ancient Gurukul wisdom + Modern startup tools</span>
+                <span>Cardinal Gurukul wisdom + Modern startup tools</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>🧑‍💻</span>
@@ -108,14 +99,10 @@ const NewFinalCTASection = () => {
 
           {/* Ancient Wisdom Footer */}
           <div className="border-t border-white/20 pt-8">
-            <p className="text-white/70 text-sm italic">
-              "Where ancient Gurukul wisdom meets modern startup success"
-            </p>
+            <p className="text-white/70 text-sm italic">"Where cardinal Gurukul wisdom meets modern startup success"</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default NewFinalCTASection;
