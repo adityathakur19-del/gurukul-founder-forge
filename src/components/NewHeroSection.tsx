@@ -65,7 +65,7 @@ const NewHeroSection = () => {
               
               <Button size="lg" className="w-full text-xl px-12 py-6 h-auto mb-4 bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron" onClick={redirectToPayment}>
                 <CheckCircle className="w-6 h-6 mr-2" />
-                Reserve My Seat – Only 50 Spots
+                Reserve My Seat – Less than 15 Spots Left
               </Button>
               
               <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
