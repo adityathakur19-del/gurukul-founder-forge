@@ -6,7 +6,7 @@ const NewFinalCTASection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  const timeLeft = useCountdown('2025-09-27T10:00:00+05:30');
+  const timeLeft = useCountdown('2025-09-13T10:00:00+05:30');
   return <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
       {/* Traditional Background Pattern */}
       <div className="absolute inset-0 opacity-10 bg-mandala-pattern"></div>
@@ -36,7 +36,7 @@ const NewFinalCTASection = () => {
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-white hover:bg-white/25 transition-all duration-300 animate-fade-in-up delay-100">
               <Users className="w-8 h-8 mx-auto mb-3" />
               <div className="text-2xl font-bold">Less than 15</div>
-              <div className="text-sm opacity-90">Seats remaining</div>
+              <div className="text-sm opacity-90">Seats Remaining</div>
             </div>
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-white hover:bg-white/25 transition-all duration-300 animate-fade-in-up delay-200">
               <Zap className="w-8 h-8 mx-auto mb-3 animate-pulse" />
