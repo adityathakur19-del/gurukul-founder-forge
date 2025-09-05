@@ -74,16 +74,18 @@ const NewFAQSection = () => {
           </div>
 
           {/* Additional Trust Elements */}
-          <div className="mt-16 grid md:grid-cols-3 gap-6">
-            <div className="text-center p-6 bg-white rounded-xl shadow-soft">
-              <div className="text-3xl mb-3">🔒</div>
-              <h4 className="font-semibold text-foreground mb-2">Secure Payment</h4>
-              <p className="text-sm text-muted-foreground">SSL encrypted checkout</p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-soft">
-              <div className="text-3xl mb-3">💯</div>
-              <h4 className="font-semibold text-foreground mb-2">90-Day Plan</h4>
-              <p className="text-sm text-muted-foreground">Guaranteed outcome</p>
+          <div className="mt-16 flex justify-center">
+            <div className="grid grid-cols-2 gap-6 max-w-2xl">
+              <div className="text-center p-6 bg-white rounded-xl shadow-soft">
+                <div className="text-3xl mb-3">🔒</div>
+                <h4 className="font-semibold text-foreground mb-2">Secure Payment</h4>
+                <p className="text-sm text-muted-foreground">SSL encrypted checkout</p>
+              </div>
+              <div className="text-center p-6 bg-white rounded-xl shadow-soft">
+                <div className="text-3xl mb-3">💯</div>
+                <h4 className="font-semibold text-foreground mb-2">90-Day Plan</h4>
+                <p className="text-sm text-muted-foreground">Guaranteed outcome</p>
+              </div>
             </div>
           </div>
         </div>
