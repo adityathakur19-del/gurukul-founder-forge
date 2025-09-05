@@ -35,9 +35,7 @@ const NewHeroSection = () => {
                 – In 2 Days
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                From vision to funding – master strategy, sales, finance, AI, and culture with founders who've built and scaled successfully.
-              </p>
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">From Idea to Revenue Engine - Master Sales, HR, Ops, Funding, Strategy and AI tools from founders who’ve built & scaled successfully.</p>
             </div>
 
             {/* Countdown Timer */}
