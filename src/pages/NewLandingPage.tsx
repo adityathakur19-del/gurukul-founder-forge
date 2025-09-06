@@ -9,6 +9,7 @@ import NewBonusesSection from "@/components/NewBonusesSection";
 import NewProofSection from "@/components/NewProofSection";
 import NewFAQSection from "@/components/NewFAQSection";
 import NewFinalCTASection from "@/components/NewFinalCTASection";
+import ContactUsSection from "@/components/ContactUsSection";
 
 const NewLandingPage = () => {
   return (
@@ -24,6 +25,7 @@ const NewLandingPage = () => {
       <NewProofSection />
       <NewFAQSection />
       <NewFinalCTASection />
+      <ContactUsSection />
     </main>
   );
 };
