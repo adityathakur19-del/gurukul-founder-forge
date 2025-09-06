@@ -5,22 +5,22 @@ const NewBonusesSection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  return <section className="py-20 bg-gradient-to-b from-warm-white to-green-accent/5">
+  return <section className="py-20 bg-gradient-to-b from-warm-white to-green-accent/5 overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               Bonuses &{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                 Offers
               </span>
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg sm:text-xl text-muted-foreground">
               Limited-time value packed exclusively for early birds
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
             {/* Early Bird Pricing */}
             <div className="bg-gradient-to-br from-saffron/10 to-deep-saffron/20 rounded-2xl p-8 border border-saffron/30 shadow-warm animate-fade-in-up">
               <div className="text-center space-y-6">
@@ -30,9 +30,9 @@ const NewBonusesSection = () => {
                 </div>
                 
                   <div className="space-y-4">
-                    <div className="flex items-center justify-center space-x-4">
-                      <span className="text-3xl text-startup-gray line-through">₹51,999</span>
-                      <span className="text-6xl font-bold text-saffron">₹7,499</span>
+                    <div className="flex items-center justify-center space-x-2 sm:space-x-4 flex-wrap">
+                      <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹51,999</span>
+                      <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-saffron break-words">₹7,499</span>
                     </div>
                     <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
                       Save 85%
@@ -44,7 +44,7 @@ const NewBonusesSection = () => {
                       <Clock className="w-5 h-5 text-startup-blue" />
                       <span className="font-semibold text-startup-blue text-lg">Limited Time Offer</span>
                     </div>
-                    <ul className="text-left space-y-2 text-muted-foreground text-lg">
+                    <ul className="text-left space-y-2 text-muted-foreground text-sm sm:text-base lg:text-lg">
                       <li>• Only 10 seats left</li>
                       <li>• Early bird pricing ends soon</li>
                       <li>• 40+ founders already registered</li>
@@ -110,7 +110,7 @@ const NewBonusesSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-12 py-6 text-xl" onClick={redirectToPayment}>
+            <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-6 sm:px-8 lg:px-12 py-4 sm:py-6 text-lg sm:text-xl max-w-full" onClick={redirectToPayment}>
               Claim Early Bird ₹7,499/-
             </Button>
             <p className="text-sm text-muted-foreground mt-4">🔒 Secure payment • 💯 90-day plan guarantee</p>

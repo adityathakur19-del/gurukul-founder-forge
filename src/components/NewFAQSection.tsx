@@ -34,17 +34,17 @@ const NewFAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-warm-white bg-lotus-pattern">
+    <section className="py-20 bg-gradient-to-b from-background to-warm-white bg-lotus-pattern overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               Frequently Asked{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                 Questions
               </span>
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg sm:text-xl text-muted-foreground">
               Everything you need to know before joining
             </p>
           </div>
@@ -58,13 +58,13 @@ const NewFAQSection = () => {
                   className="bg-white rounded-xl shadow-soft mb-4 border border-saffron/10 overflow-hidden animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <AccordionTrigger className="px-6 py-4 text-left hover:no-underline hover:bg-saffron/5 transition-colors">
-                    <span className="text-lg font-semibold text-foreground pr-4">
+                  <AccordionTrigger className="px-4 sm:px-6 py-4 text-left hover:no-underline hover:bg-saffron/5 transition-colors">
+                    <span className="text-base sm:text-lg font-semibold text-foreground pr-2 sm:pr-4 break-words">
                       {faq.question}
                     </span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4">
-                    <p className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="px-4 sm:px-6 pb-4">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">
                       {faq.answer}
                     </p>
                   </AccordionContent>
@@ -75,16 +75,16 @@ const NewFAQSection = () => {
 
           {/* Additional Trust Elements */}
           <div className="mt-16 flex justify-center">
-            <div className="grid grid-cols-2 gap-6 max-w-2xl">
-              <div className="text-center p-6 bg-white rounded-xl shadow-soft">
-                <div className="text-3xl mb-3">🔒</div>
-                <h4 className="font-semibold text-foreground mb-2">Secure Payment</h4>
-                <p className="text-sm text-muted-foreground">SSL encrypted checkout</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-2xl w-full">
+              <div className="text-center p-4 sm:p-6 bg-white rounded-xl shadow-soft max-w-full">
+                <div className="text-2xl sm:text-3xl mb-3">🔒</div>
+                <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Secure Payment</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground break-words">SSL encrypted checkout</p>
               </div>
-              <div className="text-center p-6 bg-white rounded-xl shadow-soft">
-                <div className="text-3xl mb-3">💯</div>
-                <h4 className="font-semibold text-foreground mb-2">90-Day Plan</h4>
-                <p className="text-sm text-muted-foreground">Guaranteed outcome</p>
+              <div className="text-center p-4 sm:p-6 bg-white rounded-xl shadow-soft max-w-full">
+                <div className="text-2xl sm:text-3xl mb-3">💯</div>
+                <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">90-Day Plan</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground break-words">Guaranteed outcome</p>
               </div>
             </div>
           </div>
