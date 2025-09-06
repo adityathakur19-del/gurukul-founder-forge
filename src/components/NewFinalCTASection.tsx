@@ -63,7 +63,7 @@ const NewFinalCTASection = () => {
 
           {/* Final CTA Button */}
           <div className="space-y-6">
-            <Button size="lg" className="bg-white text-saffron hover:bg-white/90 hover:text-deep-saffron border-2 border-white text-2xl px-20 py-8 h-auto font-bold shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-300 animate-pulse-glow" onClick={redirectToPayment}>
+            <Button size="lg" className="bg-white text-saffron hover:bg-white/90 hover:text-deep-saffron border-2 border-white text-lg sm:text-xl lg:text-2xl px-6 sm:px-12 lg:px-20 py-6 sm:py-8 h-auto font-bold shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-300 animate-pulse-glow" onClick={redirectToPayment}>
               <CheckCircle className="w-8 h-8 mr-3" />
               Yes! Reserve My Seat
             </Button>
