@@ -74,13 +74,16 @@ const NewBonusesSection = () => {
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">Bonus 1:1 Expert call cost</span>
-                    <span className="font-bold text-saffron text-lg">₹10,000</span>
-                  </div>
-                  
-                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">Session Recording cost</span>
                     <span className="font-bold text-saffron text-lg">₹2,000</span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-accent/10 to-startup-blue/10 rounded-xl shadow-soft border border-green-accent/30">
+                    <div className="flex items-center space-x-2">
+                      <Gift className="w-5 h-5 text-green-accent" />
+                      <span className="font-medium text-foreground text-lg">Bonus 1:1 Expert call cost</span>
+                    </div>
+                    <span className="font-bold text-saffron text-lg">₹10,000</span>
                   </div>
                   
                   <div className="border-t-2 border-saffron/20 pt-4">
