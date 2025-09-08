@@ -113,7 +113,7 @@ const NewHeroSection = () => {
                       </div>
                       <div className="flex items-center justify-center space-x-2 text-foreground">
                         <Clock className="w-4 h-4 text-saffron" />
-                        <span className="text-sm sm:text-base font-medium">10 AM to 4 PM IST</span>
+                        <span className="text-sm sm:text-base font-medium">10 AM to 6 PM IST</span>
                       </div>
                     </div>
                   </div>

@@ -124,7 +124,7 @@ const NewWhatYoullGetSection = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-5 h-5 text-saffron" />
-                  <span className="font-semibold">10 AM to 4 PM IST</span>
+                  <span className="font-semibold">10 AM to 6 PM IST</span>
                 </div>
               </div>
             </div>
