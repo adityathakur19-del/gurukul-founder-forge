@@ -93,7 +93,7 @@ const FloatingChatBubble = () => {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: 'Sorry, I encountered an error. Please try again or contact us at support@newgengurukul.com',
+        content: 'Sorry, I encountered an error. Please try again or contact us at contact@newgengurukul.com',
         timestamp: new Date()
       };
       setMessages(prev => [...prev, errorMessage]);

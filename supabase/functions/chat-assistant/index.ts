@@ -67,7 +67,7 @@ CONVERSATION GUIDELINES:
 - Guide users toward registration when they show interest
 - If asked about unrelated topics, politely redirect to workshop information
 - Be helpful, professional, and enthusiastic about the program
-- Contact information: support@newgengurukul.com, +91 8130995656, +91 6366447124
+- Contact information: contact@newgengurukul.com, +91 8130995656, +91 6366447124
 `;
 
 serve(async (req) => {
@@ -133,7 +133,7 @@ serve(async (req) => {
   } catch (error) {
     console.error('Error in chat-assistant function:', error);
     return new Response(JSON.stringify({ 
-      error: 'Sorry, I encountered an error. Please try again or contact support@newgengurukul.com',
+      error: 'Sorry, I encountered an error. Please try again or contact contact@newgengurukul.com',
       success: false 
     }), {
       status: 500,
