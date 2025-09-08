@@ -40,7 +40,7 @@ const NewFinalCTASection = () => {
             </div>
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-white hover:bg-white/25 transition-all duration-300 animate-fade-in-up delay-200">
               <Zap className="w-8 h-8 mx-auto mb-3 animate-pulse" />
-              <div className="text-2xl font-bold">₹44,500</div>
+              <div className="text-2xl font-bold">₹17,500</div>
               <div className="text-sm opacity-90">You Save Today</div>
             </div>
           </div>
