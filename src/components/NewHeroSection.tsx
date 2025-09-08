@@ -41,7 +41,7 @@ const NewHeroSection = () => {
             {/* Countdown Timer */}
             <div className="bg-gradient-to-r from-startup-blue/10 to-saffron/10 rounded-2xl p-4 sm:p-6 border border-saffron/20">
               <div className="text-center space-y-3 sm:space-y-4">
-                <p className="text-xs sm:text-sm font-semibold text-startup-blue uppercase tracking-wide">Early Bird Ends In</p>
+                <p className="text-xs sm:text-sm font-semibold text-startup-blue uppercase tracking-wide">SESSION STARTS IN</p>
                 <div className="flex justify-center space-x-2 sm:space-x-4">
                   {Object.entries(timeLeft).map(([unit, value]) => <div key={unit} className="text-center animate-countdown-pulse">
                       <div className="bg-white rounded-lg p-2 sm:p-3 shadow-soft min-w-[50px] sm:min-w-[60px]">
@@ -109,11 +109,11 @@ const NewHeroSection = () => {
                     <div className="space-y-2">
                       <div className="flex items-center justify-center space-x-2 text-foreground">
                         <Calendar className="w-4 h-4 text-saffron" />
-                        <span className="text-sm sm:text-base font-semibold">27 Sep and 28 Sep</span>
+                        <span className="text-sm sm:text-base font-semibold">27 Sep & 28 Sep</span>
                       </div>
                       <div className="flex items-center justify-center space-x-2 text-foreground">
                         <Clock className="w-4 h-4 text-saffron" />
-                        <span className="text-sm sm:text-base font-medium">10 AM to 4 PM</span>
+                        <span className="text-sm sm:text-base font-medium">10 AM to 4 PM IST</span>
                       </div>
                     </div>
                   </div>
