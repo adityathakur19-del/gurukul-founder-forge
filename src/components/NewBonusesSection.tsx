@@ -34,9 +34,7 @@ const NewBonusesSection = () => {
                       <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹24,999</span>
                       <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-saffron break-words">₹7,499</span>
                     </div>
-                    <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
-                      Save 85%
-                    </div>
+                    <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">Save 70%</div>
                   </div>
                   
                   <div className="bg-white/80 rounded-xl p-6">
