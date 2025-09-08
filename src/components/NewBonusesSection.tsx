@@ -45,7 +45,7 @@ const NewBonusesSection = () => {
                       <span className="font-semibold text-startup-blue text-lg">Limited Time Offer</span>
                     </div>
                     <ul className="text-left space-y-2 text-muted-foreground text-sm sm:text-base lg:text-lg">
-                      <li>• Only 10 seats left</li>
+                      <li>• Less than 15 seats left</li>
                       <li>• Early bird pricing ends soon</li>
                       <li>• 40+ founders already registered</li>
                     </ul>
