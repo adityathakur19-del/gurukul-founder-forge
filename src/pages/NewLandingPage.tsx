@@ -10,6 +10,7 @@ import NewProofSection from "@/components/NewProofSection";
 import NewFAQSection from "@/components/NewFAQSection";
 import NewFinalCTASection from "@/components/NewFinalCTASection";
 import ContactUsSection from "@/components/ContactUsSection";
+import FloatingChatBubble from "@/components/FloatingChatBubble";
 
 const NewLandingPage = () => {
   return (
@@ -26,6 +27,7 @@ const NewLandingPage = () => {
       <NewFAQSection />
       <NewFinalCTASection />
       <ContactUsSection />
+      <FloatingChatBubble />
     </main>
   );
 };

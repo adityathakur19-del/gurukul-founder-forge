@@ -17,7 +17,7 @@ const FloatingChatBubble = () => {
     {
       id: '1',
       role: 'assistant',
-      content: 'Hello! I\'m here to help you with any questions about our entrepreneurial program. How can I assist you today?',
+      content: 'Hello! I\'m here to help you with any questions about the NewGen Gurukul workshop. I can provide information about the program, dates, pricing, what\'s included, and help you understand if this workshop is right for you. What would you like to know?',
       timestamp: new Date()
     }
   ]);
@@ -54,24 +54,53 @@ const FloatingChatBubble = () => {
     setIsLoading(true);
 
     try {
-      // Simple contact action - redirect to email
-      const emailSubject = encodeURIComponent("Support Query - NewGen Gurukul");
-      const emailBody = encodeURIComponent(inputValue);
-      window.location.href = `mailto:support@newgengurukul.com?subject=${emailSubject}&body=${emailBody}`;
-      
-      // Clear message and close chat
-      setInputValue('');
-      setIsOpen(false);
-      
-      toast({
-        title: "Email opened",
-        description: "Your default email client should open with your message.",
+      // Prepare messages for API (exclude system message)
+      const apiMessages = currentMessages.slice(1).map(msg => ({
+        role: msg.role,
+        content: msg.content
+      }));
+
+      console.log('Sending message to chat assistant...');
+      const response = await fetch(`https://fwhtjcextjmumvrjyzil.supabase.co/functions/v1/chat-assistant`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ messages: apiMessages }),
       });
+
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      
+      if (data.success && data.message) {
+        const assistantMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          role: 'assistant',
+          content: data.message,
+          timestamp: new Date()
+        };
+        
+        setMessages(prev => [...prev, assistantMessage]);
+      } else {
+        throw new Error(data.error || 'Failed to get response');
+      }
+
     } catch (error) {
-      console.error('Error opening email:', error);
+      console.error('Error sending message:', error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: 'Sorry, I encountered an error. Please try again or contact us at support@newgengurukul.com',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, errorMessage]);
+      
       toast({
         title: "Error",
-        description: "Could not open email client. Please contact support@newgengurukul.com directly.",
+        description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
     } finally {
