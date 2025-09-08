@@ -77,8 +77,12 @@ serve(async (req) => {
   }
 
   try {
+    console.log('Chat assistant function called');
     const openAIApiKey = Deno.env.get('OPENAI_API_KEY');
+    console.log('OpenAI API key status:', openAIApiKey ? 'Set' : 'Not set');
+    
     if (!openAIApiKey) {
+      console.error('OPENAI_API_KEY environment variable is not set');
       throw new Error('OPENAI_API_KEY is not set');
     }
 
