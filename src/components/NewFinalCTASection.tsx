@@ -6,7 +6,7 @@ const NewFinalCTASection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  const timeLeft = useCountdown('2025-09-13T10:00:00+05:30');
+  const timeLeft = useCountdown('2025-09-27T10:00:00+05:30');
   return <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
       {/* Traditional Background Pattern */}
       <div className="absolute inset-0 opacity-10 bg-mandala-pattern"></div>
