@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FileText, Brain, Video, Award, Users, Phone } from "lucide-react";
+import { FileText, Brain, Video, Award, Users, Phone, Calendar, Clock } from "lucide-react";
 import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 const NewWhatYoullGetSection = () => {
   const {
@@ -110,10 +110,24 @@ const NewWhatYoullGetSection = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center">
+          <div className="text-center space-y-6">
             <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-10 py-6 text-lg" onClick={redirectToPayment}>
               Yes, I Want Access to These Resources
             </Button>
+            
+            {/* Session Dates */}
+            <div className="bg-gradient-to-r from-saffron/10 to-guru-gold/10 backdrop-blur-sm rounded-xl p-6 border border-saffron/20 max-w-md mx-auto">
+              <div className="flex items-center justify-center space-x-6 text-foreground">
+                <div className="flex items-center space-x-2">
+                  <Calendar className="w-5 h-5 text-saffron" />
+                  <span className="font-semibold">27 Sep & 28 Sep</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Clock className="w-5 h-5 text-saffron" />
+                  <span className="font-semibold">10 AM to 4 PM IST</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

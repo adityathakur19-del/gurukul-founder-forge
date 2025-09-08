@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Clock, Shield, Zap, Users } from "lucide-react";
+import { CheckCircle, Clock, Shield, Zap, Users, Calendar } from "lucide-react";
 import { usePaymentRedirect } from "@/hooks/usePaymentRedirect";
 import { useCountdown } from "@/hooks/useCountdown";
 const NewFinalCTASection = () => {
@@ -68,9 +68,23 @@ const NewFinalCTASection = () => {
               Yes! Reserve My Seat
             </Button>
             
-            <div className="text-white/90 space-y-2">
+            <div className="text-white/90 space-y-4">
               <p className="text-lg">🔒 Secure Payment • 💯 90-Day Plan Guarantee</p>
               <p className="text-sm opacity-75">Join the Gurukul of Modern Entrepreneurs</p>
+              
+              {/* Session Dates */}
+              <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20 max-w-md mx-auto">
+                <div className="flex items-center justify-center space-x-6 text-white">
+                  <div className="flex items-center space-x-2">
+                    <Calendar className="w-5 h-5" />
+                    <span className="font-semibold">27 Sep & 28 Sep</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Clock className="w-5 h-5" />
+                    <span className="font-semibold">10 AM to 4 PM IST</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
