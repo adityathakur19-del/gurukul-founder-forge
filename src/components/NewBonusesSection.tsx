@@ -60,17 +60,17 @@ const NewBonusesSection = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">Cost of 2-day workshop</span>
-                    <span className="font-bold text-saffron text-lg">₹4,999</span>
+                    <span className="font-bold text-saffron text-lg">₹7,999</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">Templates and Frameworks</span>
-                    <span className="font-bold text-saffron text-lg">₹5,000</span>
+                    <span className="font-bold text-saffron text-lg">₹3,000</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">AI Tools shortlist and tips</span>
-                    <span className="font-bold text-saffron text-lg">₹3,000</span>
+                    <span className="font-bold text-saffron text-lg">₹2,000</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
