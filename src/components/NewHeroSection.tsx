@@ -103,6 +103,20 @@ const NewHeroSection = () => {
                 <div className="text-center space-y-3 sm:space-y-4">
                   <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Cardinal Wisdom + Modern Tools</h3>
                   <p className="text-base sm:text-lg text-muted-foreground">Where Gurukul tradition meets startup innovation</p>
+                  
+                  {/* Session Dates and Times */}
+                  <div className="bg-gradient-to-r from-saffron/15 to-guru-gold/15 rounded-xl border border-saffron/30 p-3 sm:p-4 mx-auto max-w-sm animate-pulse-glow">
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-center space-x-2 text-foreground">
+                        <Calendar className="w-4 h-4 text-saffron" />
+                        <span className="text-sm sm:text-base font-semibold">27 Sep and 28 Sep</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2 text-foreground">
+                        <Clock className="w-4 h-4 text-saffron" />
+                        <span className="text-sm sm:text-base font-medium">10 AM to 4 PM</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="flex justify-center space-x-4 sm:space-x-6">
