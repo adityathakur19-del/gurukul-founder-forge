@@ -31,11 +31,11 @@ const NewBonusesSection = () => {
                 
                   <div className="space-y-4">
                     <div className="flex items-center justify-center space-x-2 sm:space-x-4 flex-wrap">
-                      <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹51,999</span>
+                      <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹24,999</span>
                       <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-saffron break-words">₹7,499</span>
                     </div>
                     <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
-                      Save 85%
+                      Save 70%
                     </div>
                   </div>
                   
@@ -60,21 +60,21 @@ const NewBonusesSection = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">Cost of 2-day workshop</span>
-                    <span className="font-bold text-saffron text-lg">₹14,999</span>
+                    <span className="font-bold text-saffron text-lg">₹4,999</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">Templates and Frameworks cost</span>
-                    <span className="font-bold text-saffron text-lg">₹15,000</span>
+                    <span className="font-medium text-foreground text-lg">Templates and Frameworks</span>
+                    <span className="font-bold text-saffron text-lg">₹5,000</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">AI Tools shortlist and tips cost</span>
-                    <span className="font-bold text-saffron text-lg">₹10,000</span>
+                    <span className="font-medium text-foreground text-lg">AI Tools shortlist and tips</span>
+                    <span className="font-bold text-saffron text-lg">₹3,000</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">1:1 Expert call cost</span>
+                    <span className="font-medium text-foreground text-lg">Bonus 1:1 Expert call cost</span>
                     <span className="font-bold text-saffron text-lg">₹10,000</span>
                   </div>
                   
@@ -86,12 +86,12 @@ const NewBonusesSection = () => {
                   <div className="border-t-2 border-saffron/20 pt-4">
                     <div className="flex justify-between items-center p-4 bg-gradient-to-r from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/30">
                       <span className="text-xl font-bold text-foreground">Total Value</span>
-                      <span className="text-2xl font-bold text-saffron">₹51,999</span>
+                      <span className="text-2xl font-bold text-saffron">₹24,999</span>
                     </div>
                   </div>
                   
                   <div className="text-center text-xl font-semibold text-green-accent">
-                    You pay only: ₹7,499 – Save 85%
+                    You pay only: ₹7,499 – Save 70%
                   </div>
               </div>
             </div>
