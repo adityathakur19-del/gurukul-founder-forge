@@ -61,7 +61,7 @@ const FloatingChatBubble = () => {
       }));
 
       console.log('Sending message to chat assistant...');
-      const response = await fetch(`https://fwhtjcextjmumvrjyzil.supabase.co/functions/v1/chat-assistant`, {
+      const response = await fetch(`https://cywmcspgkeqstgvjcdhr.supabase.co/functions/v1/chat-assistant`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

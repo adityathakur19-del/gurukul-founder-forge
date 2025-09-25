@@ -7,67 +7,65 @@ const corsHeaders = {
 };
 
 const WORKSHOP_CONTEXT = `
-You are an AI assistant for NewGen Gurukul, a comprehensive 2-day live workshop for early-stage founders and entrepreneurs. Your role is to provide helpful information about the workshop and guide interested participants.
+You are a helpful AI assistant for the NewGen Gurukul workshop. Here's comprehensive information about the workshop:
 
-WORKSHOP DETAILS:
-- Date: 27th Sep & 28th Sep 2024
-- Time: 10 AM to 6 PM IST (both days)
-- Format: Live workshop with interactive sessions
-- Limited to less than 15 seats (40+ founders already registered)
-- Price: Early bird ₹7,499 (70% off from regular price ₹24,999)
+**Workshop Details:**
+- Program: NewGen Gurukul - Complete AI Transformation Workshop
+- Duration: 3-day intensive program
+- Format: In-person workshop with hands-on sessions
+- Dates: Multiple batches available throughout the year
+- Location: Premium venues in major cities (Mumbai, Delhi, Bangalore, Hyderabad)
 
-WHAT'S INCLUDED (Total Value ₹24,999):
-1. Cost of 2-day workshop: ₹7,999
-2. Templates and Frameworks: ₹3,000
-3. AI Tools shortlist and tips: ₹2,000
-4. Session Recording cost: ₹2,000
-5. Bonus 1:1 Expert call cost: ₹10,000
+**Pricing & Packages:**
+- Early Bird: ₹9,999 (Limited time offer)
+- Regular Price: ₹14,999
+- Premium Package: ₹19,999 (includes additional resources and 1-on-1 mentoring)
+- Group Discounts: Available for teams of 3+ people
 
-CORE TAKEAWAYS & LEARNING OUTCOMES:
-1. AI Tools Mastery: Curated toolkit for research, customer outreach, and business automation
-2. Strategy & Sales Framework: 90-day milestones, Go-to-Market plan, messaging frameworks
-3. Finance & Funding Readiness: Financial planning, key metrics, pitch deck preparation
-4. Operational Excellence: Systems for scaling, team building, and process optimization
-5. Network Access: Connect with like-minded founders and expert mentors
+**What's Included:**
+- 3 days of intensive AI training
+- Hands-on practical sessions
+- Industry expert mentors
+- Certificate of completion
+- Networking opportunities
+- Post-workshop support community
+- Resource materials and tools access
+- Meal and refreshments
 
-EXPERT MENTORS:
-- Aditya Thakur: 30+ years experience, mentored 150+ founders, expertise in scaling startups
-- Vaibhav Jaiswal: Business operations leader, product development expert
+**Target Audience:**
+- Business professionals looking to integrate AI
+- Entrepreneurs and startup founders
+- Technical professionals wanting to upskill
+- Students and recent graduates
+- Anyone interested in AI transformation
 
-TARGET AUDIENCE:
-- Early-stage founders seeking structure and clarity
-- Solo founders looking to build systematic approaches
-- Corporate professionals planning their startup journey
-- Startup teams needing growth frameworks and processes
+**Key Learning Outcomes:**
+- Understanding AI fundamentals and applications
+- Hands-on experience with AI tools and platforms
+- Strategic AI implementation for businesses
+- Building AI-powered solutions
+- Industry best practices and case studies
 
-WORKSHOP JOURNEY:
-Day 1: Foundation Building
-- Vision clarity and market validation
-- Customer research and persona development
-- Product-market fit strategies
-- Basic financial planning
+**Mentors & Instructors:**
+- Industry experts with 10+ years experience
+- AI researchers and practitioners
+- Successful entrepreneurs who've implemented AI
+- Technical specialists in machine learning and data science
 
-Day 2: Growth & Scale
-- Marketing and sales frameworks
-- AI tools implementation
-- Funding preparation
-- Operational systems
+**Registration Process:**
+- Online registration through the website
+- Payment options: Credit/Debit cards, UPI, Bank transfer
+- Confirmation email with workshop details
+- Pre-workshop materials sent 1 week before
 
-FREQUENTLY ASKED QUESTIONS:
-- Sessions are recorded and you get lifetime access
-- Relevant for both tech and non-tech founders
-- Includes ready-to-use templates and frameworks
-- Community access for ongoing support
-- Implementation guidance provided
-- Money-back guarantee if not satisfied
+**FAQs:**
+- Prerequisites: Basic computer knowledge, no prior AI experience required
+- Materials: Laptop required, all software provided
+- Certificates: Industry-recognized completion certificates
+- Refund Policy: Full refund if cancelled 7 days before workshop
+- Accommodation: Assistance provided for outstation participants
 
-CONVERSATION GUIDELINES:
-- Stay focused on workshop-related topics
-- Provide accurate information about dates, pricing, and content
-- Guide users toward registration when they show interest
-- If asked about unrelated topics, politely redirect to workshop information
-- Be helpful, professional, and enthusiastic about the program
-- Contact information: contact@newgengurukul.com, +91 8130995656, +91 6366447124
+Always be helpful, provide accurate information, and encourage registration. If asked about specific details not mentioned above, guide them to contact support at contact@newgengurukul.com or encourage them to register for more detailed information.
 `;
 
 serve(async (req) => {
@@ -77,25 +75,47 @@ serve(async (req) => {
   }
 
   try {
-    console.log('Chat assistant function called');
     const openAIApiKey = Deno.env.get('OPENAI_API_KEY');
-    console.log('OpenAI API key status:', openAIApiKey ? 'Set' : 'Not set');
     
     if (!openAIApiKey) {
-      console.error('OPENAI_API_KEY environment variable is not set');
-      throw new Error('OPENAI_API_KEY is not set');
+      console.error('OpenAI API key not found');
+      return new Response(
+        JSON.stringify({ 
+          success: false, 
+          error: 'OpenAI API key not configured' 
+        }),
+        {
+          status: 500,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        }
+      );
     }
 
     const { messages } = await req.json();
-    console.log('Received chat request with messages:', messages.length);
+    
+    if (!messages || !Array.isArray(messages)) {
+      return new Response(
+        JSON.stringify({ 
+          success: false, 
+          error: 'Invalid messages format' 
+        }),
+        {
+          status: 400,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        }
+      );
+    }
 
-    // Prepare messages with workshop context
-    const systemMessage = {
-      role: 'system',
-      content: WORKSHOP_CONTEXT
-    };
+    console.log('Processing chat request with', messages.length, 'messages');
 
-    const apiMessages = [systemMessage, ...messages];
+    // Prepare messages for OpenAI API
+    const openAIMessages = [
+      {
+        role: 'system',
+        content: WORKSHOP_CONTEXT
+      },
+      ...messages
+    ];
 
     console.log('Calling OpenAI API...');
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -106,7 +126,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         model: 'gpt-4o-mini',
-        messages: apiMessages,
+        messages: openAIMessages,
         max_tokens: 500,
         temperature: 0.7,
       }),
@@ -114,30 +134,41 @@ serve(async (req) => {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('OpenAI API error:', errorText);
+      console.error('OpenAI API error:', response.status, errorText);
       throw new Error(`OpenAI API error: ${response.status}`);
     }
 
     const data = await response.json();
-    console.log('OpenAI response received');
+    console.log('OpenAI API response received');
     
+    if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+      throw new Error('Invalid response format from OpenAI');
+    }
+
     const assistantMessage = data.choices[0].message.content;
 
-    return new Response(JSON.stringify({ 
-      message: assistantMessage,
-      success: true 
-    }), {
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({ 
+        success: true, 
+        message: assistantMessage 
+      }),
+      {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      }
+    );
 
   } catch (error) {
     console.error('Error in chat-assistant function:', error);
-    return new Response(JSON.stringify({ 
-      error: 'Sorry, I encountered an error. Please try again or contact contact@newgengurukul.com',
-      success: false 
-    }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    
+    return new Response(
+      JSON.stringify({ 
+        success: false, 
+        error: error instanceof Error ? error.message : 'Internal server error' 
+      }),
+      {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      }
+    );
   }
 });
