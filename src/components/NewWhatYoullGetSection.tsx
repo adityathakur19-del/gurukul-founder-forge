@@ -120,7 +120,7 @@ const NewWhatYoullGetSection = () => {
               <div className="flex items-center justify-center space-x-6 text-foreground">
                 <div className="flex items-center space-x-2">
                   <Calendar className="w-5 h-5 text-saffron" />
-                  <span className="font-semibold">27 Sep & 28 Sep</span>
+                  <span className="font-semibold">11 Oct & 12 Oct</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-5 h-5 text-saffron" />

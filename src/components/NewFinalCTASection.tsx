@@ -6,7 +6,7 @@ const NewFinalCTASection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  const timeLeft = useCountdown('2025-09-27T10:00:00+05:30');
+  const timeLeft = useCountdown('2025-10-11T10:00:00+05:30');
   return <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
       {/* Traditional Background Pattern */}
       <div className="absolute inset-0 opacity-10 bg-mandala-pattern"></div>
@@ -77,7 +77,7 @@ const NewFinalCTASection = () => {
                 <div className="flex items-center justify-center space-x-6 text-white">
                   <div className="flex items-center space-x-2">
                     <Calendar className="w-5 h-5" />
-                    <span className="font-semibold">27 Sep & 28 Sep</span>
+                    <span className="font-semibold">11 Oct & 12 Oct</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Clock className="w-5 h-5" />

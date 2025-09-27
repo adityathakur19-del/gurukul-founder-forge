@@ -7,7 +7,7 @@ const NewHeroSection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  const timeLeft = useCountdown('2025-09-27T10:00:00+05:30', true);
+  const timeLeft = useCountdown('2025-10-11T10:00:00+05:30', true);
   return <section className="relative min-h-screen bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-x-hidden bg-lotus-pattern">
       
       {/* Traditional Background Elements */}
@@ -109,7 +109,7 @@ const NewHeroSection = () => {
                     <div className="space-y-2">
                       <div className="flex items-center justify-center space-x-2 text-foreground">
                         <Calendar className="w-4 h-4 text-saffron" />
-                        <span className="text-sm sm:text-base font-semibold">27 Sep & 28 Sep</span>
+                        <span className="text-sm sm:text-base font-semibold">11 Oct & 12 Oct</span>
                       </div>
                       <div className="flex items-center justify-center space-x-2 text-foreground">
                         <Clock className="w-4 h-4 text-saffron" />
