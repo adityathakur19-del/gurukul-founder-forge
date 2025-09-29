@@ -1,25 +1,33 @@
-import NewHeroSection from "@/components/sections/NewHeroSection";
-import SocialProofSection from "@/components/sections/SocialProofSection";
-import WhatYoullLearnSection from "@/components/sections/WhatYoullLearnSection";
-import WorkshopsGridSection from "@/components/sections/WorkshopsGridSection";
-import MentorsSection from "@/components/sections/MentorsSection";
-import CommunityTeaserSection from "@/components/sections/CommunityTeaserSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
-import FAQSection from "@/components/sections/FAQSection";
-import FinalCTASection from "@/components/sections/FinalCTASection";
+import NewHeroSection from "@/components/NewHeroSection";
+import TrustHighlightsSection from "@/components/TrustHighlightsSection";
+import NewWhoShouldAttendSection from "@/components/NewWhoShouldAttendSection";
+import NewCoreOutcomesSection from "@/components/NewCoreOucomesSection";
+import NewMentorSection from "@/components/NewMentorSection";
+import NewJourneySection from "@/components/NewJourneySection";
+import NewWhatYoullGetSection from "@/components/NewWhatYoullGetSection";
+import NewBonusesSection from "@/components/NewBonusesSection";
+import NewProofSection from "@/components/NewProofSection";
+import NewFAQSection from "@/components/NewFAQSection";
+import NewFinalCTASection from "@/components/NewFinalCTASection";
+import ContactUsSection from "@/components/ContactUsSection";
+import FloatingChatBubble from "@/components/FloatingChatBubble";
 
 const NewLandingPage = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       <NewHeroSection />
-      <SocialProofSection />
-      <WhatYoullLearnSection />
-      <WorkshopsGridSection />
-      <MentorsSection />
-      <CommunityTeaserSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <FinalCTASection />
+      <TrustHighlightsSection />
+      <NewWhoShouldAttendSection />
+      <NewCoreOutcomesSection />
+      <NewMentorSection />
+      <NewJourneySection />
+      <NewWhatYoullGetSection />
+      <NewBonusesSection />
+      <NewProofSection />
+      <NewFAQSection />
+      <NewFinalCTASection />
+      <ContactUsSection />
+      <FloatingChatBubble />
     </main>
   );
 };

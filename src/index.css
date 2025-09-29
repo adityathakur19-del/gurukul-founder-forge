@@ -8,43 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 14% 96%;
-    --foreground: 217 33% 17%;
+    --background: 0 0% 100%;
+    --foreground: 30 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 217 33% 17%;
+    --card-foreground: 30 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 217 33% 17%;
+    --popover-foreground: 30 25% 15%;
 
-    /* Near-black primary */
-    --primary: 217 33% 17%;
+    /* Saffron - Primary brand color */
+    --primary: 35 90% 55%;
     --primary-foreground: 0 0% 100%;
 
-    /* Light neutral secondary */
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 217 33% 17%;
+    /* Deep Saffron - Secondary warm accent */
+    --secondary: 30 95% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Green accent */
-    --accent: 142 71% 45%;
+    /* Green Accent - Fresh growth color */
+    --accent: 120 40% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 45 20% 95%;
+    --muted-foreground: 30 15% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 142 71% 45%;
+    --border: 45 20% 90%;
+    --input: 45 20% 95%;
+    --ring: 25 100% 60%;
 
-    /* Custom design tokens for startup pro theme */
-    --pro-dark: 217 33% 17%;
-    --pro-green: 142 71% 45%;
-    --pro-neutral: 220 14% 96%;
-    --pro-gray: 215 16% 47%;
-    --pro-white: 0 0% 100%;
+    /* Custom design tokens */
+    --saffron: 35 90% 55%;
+    --deep-saffron: 30 95% 50%;
+    --startup-blue: 215 70% 45%;
+    --startup-gray: 220 15% 60%;
+    --green-accent: 120 40% 45%;
+    --warm-white: 45 30% 98%;
+    --soft-gray: 30 10% 90%;
     
     /* Gradients */
     --gradient-saffron: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--deep-saffron)));
