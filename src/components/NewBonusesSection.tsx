@@ -32,10 +32,10 @@ const NewBonusesSection = () => {
                   <div className="space-y-4">
                     <div className="flex items-center justify-center space-x-2 sm:space-x-4 flex-wrap">
                       <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹24,999</span>
-                      <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-saffron break-words">₹7,499</span>
+                      <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-saffron break-words">₹1,999</span>
                     </div>
                     <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
-                      Save 70%
+                      Save 86%
                     </div>
                   </div>
                   
@@ -59,7 +59,7 @@ const NewBonusesSection = () => {
               
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">Cost of 2-day workshop</span>
+                    <span className="font-medium text-foreground text-lg">8-hour intensive workshop</span>
                     <span className="font-bold text-saffron text-lg">₹7,999</span>
                   </div>
                   
@@ -94,7 +94,7 @@ const NewBonusesSection = () => {
                   </div>
                   
                   <div className="text-center text-xl font-semibold text-green-accent">
-                    You pay only: ₹7,499 – Save 70%
+                    You pay only: ₹1,999 – Save 86%
                   </div>
               </div>
             </div>
@@ -107,14 +107,14 @@ const NewBonusesSection = () => {
                 <UsersIcon className="w-6 h-6 text-startup-blue" />
                 <h4 className="text-xl font-semibold text-foreground">Bring Your Co-Founder</h4>
               </div>
-              <p className="text-muted-foreground mb-3 text-lg">Second seat for just ₹6,499 extra (instead of ₹7,499). To avail the offer, contact us at contact@newgengurukul.com.</p>
+              <p className="text-muted-foreground mb-3 text-lg">Second seat for just ₹1,499 extra (instead of ₹1,999). To avail the offer, contact us at contact@newgengurukul.com.</p>
             </div>
           </div>
 
           {/* CTA */}
           <div className="text-center mt-12">
             <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-6 sm:px-8 lg:px-12 py-4 sm:py-6 text-lg sm:text-xl max-w-full" onClick={redirectToPayment}>
-              Claim Early Bird ₹7,499/-
+              Claim Early Bird ₹1,999/-
             </Button>
             <p className="text-sm text-muted-foreground mt-4">🔒 Secure payment • 💯 90-day plan guarantee</p>
           </div>

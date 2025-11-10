@@ -9,14 +9,14 @@ const NewJourneySection = () => {
     icon: Users,
     title: "Join",
     subtitle: "Reserve Your Seat",
-    description: "₹7,499 Early Bird. Receive pre-read pack + starter templates",
+    description: "₹1,999 Early Bird. Receive pre-read pack + starter templates",
     details: "Get immediate access to foundation materials",
     color: "from-saffron to-deep-saffron"
   }, {
     icon: Calendar,
     title: "Attend",
-    subtitle: "2 Days, Live & Interactive",
-    description: "Day 1: Strategy, Sales, AI Tools. Day 2: Finance, Ops & Culture, 90-day plan",
+    subtitle: "8 Hours, Live & Interactive",
+    description: "One intensive day covering Strategy, Sales, Finance, Operations, HR, Marketing & AI Tools",
     details: "Real-time learning with immediate application",
     color: "from-green-accent to-startup-blue"
   }, {
@@ -45,7 +45,7 @@ const NewJourneySection = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              2 Days → 90 Days → Revenue Engine
+              8 Hours → 90 Days → Revenue Engine
             </p>
           </div>
 

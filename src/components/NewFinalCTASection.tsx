@@ -6,7 +6,7 @@ const NewFinalCTASection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  const timeLeft = useCountdown('2025-10-11T10:00:00+05:30');
+  const timeLeft = useCountdown('2025-11-23T10:00:00+05:30');
   return <section className="py-20 bg-gradient-to-br from-saffron via-deep-saffron to-startup-blue relative overflow-hidden">
       {/* Traditional Background Pattern */}
       <div className="absolute inset-0 opacity-10 bg-mandala-pattern"></div>
@@ -40,7 +40,7 @@ const NewFinalCTASection = () => {
             </div>
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-white hover:bg-white/25 transition-all duration-300 animate-fade-in-up delay-200">
               <Zap className="w-8 h-8 mx-auto mb-3 animate-pulse" />
-              <div className="text-2xl font-bold">₹17,500</div>
+              <div className="text-2xl font-bold">₹13,001</div>
               <div className="text-sm opacity-90">You Save Today</div>
             </div>
           </div>
@@ -51,9 +51,9 @@ const NewFinalCTASection = () => {
               Join 50 Founders in Building Your Repeatable Revenue Engine
             </h3>
             <div className="flex items-center justify-center space-x-4 text-white">
-              <span className="text-4xl font-bold">₹7,499</span>
+              <span className="text-4xl font-bold">₹1,999</span>
               <span className="bg-green-accent px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow">
-                Early Bird Offer
+                Save 86%
               </span>
             </div>
             <p className="text-lg text-white/90">
@@ -77,11 +77,11 @@ const NewFinalCTASection = () => {
                 <div className="flex items-center justify-center space-x-6 text-white">
                   <div className="flex items-center space-x-2">
                     <Calendar className="w-5 h-5" />
-                    <span className="font-semibold">11 Oct & 12 Oct</span>
+                    <span className="font-semibold">23 Nov 2025</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Clock className="w-5 h-5" />
-                    <span className="font-semibold">10 AM to 6 PM IST</span>
+                    <span className="font-semibold">10 AM to 7 PM IST</span>
                   </div>
                 </div>
               </div>
