@@ -24,9 +24,9 @@ const HeroSection = () => {
             {/* Logo */}
             <div className="flex justify-center lg:justify-start mb-6">
               <img 
-                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
-                alt="NewGen Gurukul Logo"
-                className="h-16 w-auto"
+                src="/lovable-uploads/newgen-gurukul-logo.png" 
+                alt="NewGen Gurukul - Build Smarter with AI"
+                className="h-20 w-auto"
               />
             </div>
             

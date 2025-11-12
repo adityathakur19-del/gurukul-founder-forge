@@ -9,9 +9,9 @@ const MentorSection = () => {
           <div className="text-center space-y-6 mb-16">
             <div className="flex justify-center mb-4">
               <img 
-                src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" 
-                alt="NewGen Gurukul Logo"
-                className="h-12 w-auto opacity-80"
+                src="/lovable-uploads/newgen-gurukul-logo.png" 
+                alt="NewGen Gurukul - Build Smarter with AI"
+                className="h-16 w-auto"
               />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold">

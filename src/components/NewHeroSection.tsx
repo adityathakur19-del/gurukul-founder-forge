@@ -23,7 +23,7 @@ const NewHeroSection = () => {
           <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
             {/* Logo */}
             <div className="flex justify-center lg:justify-start mb-4 sm:mb-6">
-              <img src="/lovable-uploads/a7ffcaf4-ff76-4a14-946a-2584e2312a85.png" alt="NewGen Gurukul Logo" className="h-24 sm:h-32 w-auto animate-lamp-glow" />
+              <img src="/lovable-uploads/newgen-gurukul-logo.png" alt="NewGen Gurukul - Build Smarter with AI" className="h-28 sm:h-36 w-auto animate-lamp-glow" />
             </div>
             
             <div className="space-y-4 sm:space-y-6">
