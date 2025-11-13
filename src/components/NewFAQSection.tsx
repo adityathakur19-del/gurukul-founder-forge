@@ -8,8 +8,8 @@ import {
 const NewFAQSection = () => {
   const faqs = [
     {
-      question: "Will the sessions be recorded?",
-      answer: "Yes, all sessions are recorded and you'll get 1-month access to replay any part of the workshop. This ensures you can revisit key frameworks and templates anytime."
+      question: "Why is this workshop free?",
+      answer: "We're offering this as a community initiative to help more founders get started with the right tools and frameworks. It's our way of giving back to the startup ecosystem. Limited to 20 seats to maintain quality."
     },
     {
       question: "Is this relevant for non-tech founders?",
@@ -17,19 +17,19 @@ const NewFAQSection = () => {
     },
     {
       question: "Do I get the templates mentioned?",
-      answer: "Yes, you get access to our complete toolkit: GTM templates, Sales frameworks, Financial planning models, Operations templates, and our curated AI tools shortlist - worth ₹15,000, included free."
+      answer: "Yes, you get access to essential starter templates, frameworks, and our curated AI tools guide covering ChatGPT, Perplexity, Canva, Gamma, Notion, Zapier, and Vapi - all included free."
+    },
+    {
+      question: "Will I get session recordings?",
+      answer: "No, this is a live-only 3-hour intensive workshop. However, you'll receive downloadable templates and frameworks to reference later."
     },
     {
       question: "Is there ongoing community support?",
       answer: "Yes! You'll get access to our exclusive founder community where you can connect with fellow entrepreneurs, ask questions, and get ongoing peer support beyond the workshop."
     },
     {
-      question: "What if I can't implement everything immediately?",
-      answer: "That's exactly why we include a 30-min 1:1 expert call post-workshop. You can get personalized guidance on your specific challenges and prioritize what to implement first."
-    },
-    {
-      question: "Is there a refund policy?",
-      answer: "We don't offer refunds, but we do offer something better - our 100% Confidence Guarantee. If you don't leave with a crystal-clear 90-day execution roadmap, we'll work with you 1:1 at no extra cost."
+      question: "What if I can't attend after registering?",
+      answer: "Since this is a free workshop with limited seats, please only register if you're committed to attending. If plans change, let us know in advance so we can offer your seat to someone on the waitlist."
     }
   ];
 

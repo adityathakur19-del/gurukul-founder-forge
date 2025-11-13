@@ -32,10 +32,10 @@ const NewHeroSection = () => {
                 <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                   the First Time
                 </span>{" "}
-                – In 1 Day
+                – In 3 Hours
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">From Idea to Revenue Engine - Master Sales, HR, Ops, Funding, Strategy and AI tools in one intensive 8-hour session from founders who've built & scaled successfully.</p>
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">From Idea to Revenue Engine - Master essential frameworks, AI tools & startup fundamentals in an intensive 3-hour session from founders who've built & scaled successfully.</p>
             </div>
 
             {/* Countdown Timer */}
@@ -56,10 +56,10 @@ const NewHeroSection = () => {
             {/* Pricing Section */}
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-saffron/20 shadow-warm">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-4 text-center">
-                <div className="text-xl sm:text-2xl text-startup-gray line-through">₹15,000</div>
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-saffron">₹1,999</div>
-                <div className="bg-green-accent text-white px-3 sm:px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow inline-block w-fit mx-auto sm:mx-0">
-                  Save 86%
+                <div className="text-xl sm:text-2xl text-startup-gray line-through">₹2,499</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-accent">FREE</div>
+                <div className="bg-saffron text-white px-3 sm:px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow inline-block w-fit mx-auto sm:mx-0">
+                  100% Off - Limited Seats
                 </div>
               </div>
               
@@ -113,7 +113,7 @@ const NewHeroSection = () => {
                       </div>
                       <div className="flex items-center justify-center space-x-2 text-foreground">
                         <Clock className="w-4 h-4 text-saffron" />
-                        <span className="text-sm sm:text-base font-medium">10 AM to 7 PM IST</span>
+                        <span className="text-sm sm:text-base font-medium">10 AM to 1 PM IST</span>
                       </div>
                     </div>
                   </div>
