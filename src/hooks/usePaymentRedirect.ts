@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-const PAYMENT_GATEWAY_URL = 'https://payments.cashfree.com/forms/NEWGENGURUKULFOUNDERWORKSHOP';
+const REGISTRATION_FORM_URL = 'https://forms.gle/QqYW7A7bNpxGnubq6';
 
-// Hook for handling secure payment gateway redirects
+// Hook for handling registration form redirects
 export const usePaymentRedirect = () => {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
@@ -10,10 +10,10 @@ export const usePaymentRedirect = () => {
     try {
       setIsRedirecting(true);
       
-      // Use window.location.href for secure redirect to payment gateway
-      window.location.href = PAYMENT_GATEWAY_URL;
+      // Redirect to registration form
+      window.location.href = REGISTRATION_FORM_URL;
     } catch (error) {
-      console.error('Failed to redirect to payment gateway:', error);
+      console.error('Failed to redirect to registration form:', error);
       setIsRedirecting(false);
     }
   };
