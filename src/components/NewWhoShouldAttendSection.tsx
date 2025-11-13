@@ -22,7 +22,7 @@ const NewWhoShouldAttendSection = () => {
     title: "Startup teams",
     description: "Seeking a repeatable revenue engine and growth systems"
   }];
-  const notFor = ["Looking for a quick fix without putting in the work", "Can't dedicate 8 hours to your startup foundation", "Not ready to apply proven frameworks after the workshop"];
+  const notFor = ["Looking for a quick fix without putting in the work", "Can't dedicate 3 focused hours to learn essentials", "Not ready to apply proven frameworks after the workshop"];
   return <section className="py-20 bg-gradient-to-b from-warm-white to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">

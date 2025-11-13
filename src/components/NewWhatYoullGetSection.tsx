@@ -9,17 +9,12 @@ const NewWhatYoullGetSection = () => {
     icon: FileText,
     title: "Proven Frameworks & Templates",
     items: ["Business Canvas model", "7Ps of marketing", "Financial Modelling for Startups", "Scalable System Framework"],
-    highlight: "Worth ₹15,000 - Included Free"
+    highlight: "Essential Starter Templates Included"
   }, {
     icon: Brain,
     title: "Curated AI Tools List",
-    items: ["Notion AI, Otter.ai, Durable, ChatGPT", "Perplexity, Canva, Figma", "Research & market analysis tools", "50+ hours of trial & error saved"],
-    highlight: "Exclusive Startup AI Toolkit"
-  }, {
-    icon: Video,
-    title: "Session Recordings",
-    items: ["1-month access to all sessions", "Downloadable resources", "Reference materials", "Replay key frameworks anytime"],
-    highlight: "Never Miss a Detail"
+    items: ["ChatGPT for content & strategy", "Perplexity for research", "Canva for design", "Gamma for presentations", "Notion for organization", "Zapier for automation", "Vapi for voice AI"],
+    highlight: "7 Essential AI Tools Covered"
   }];
   const bonuses = [{
     icon: Phone,
@@ -53,7 +48,7 @@ const NewWhatYoullGetSection = () => {
           </div>
 
           {/* Main Inclusions */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {inclusions.map((inclusion, index) => {
             const IconComponent = inclusion.icon;
             return <div key={index} className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-warm transition-all duration-300 hover:-translate-y-1 animate-fade-in-up" style={{
@@ -124,7 +119,7 @@ const NewWhatYoullGetSection = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-5 h-5 text-saffron" />
-                  <span className="font-semibold">10 AM to 7 PM IST</span>
+                  <span className="font-semibold">10 AM to 1 PM IST</span>
                 </div>
               </div>
             </div>

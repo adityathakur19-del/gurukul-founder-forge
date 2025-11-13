@@ -9,14 +9,14 @@ const NewJourneySection = () => {
     icon: Users,
     title: "Join",
     subtitle: "Reserve Your Seat",
-    description: "₹1,999 Early Bird. Receive pre-read pack + starter templates",
+    description: "FREE registration. Receive pre-workshop preparation materials",
     details: "Get immediate access to foundation materials",
     color: "from-saffron to-deep-saffron"
   }, {
     icon: Calendar,
     title: "Attend",
-    subtitle: "8 Hours, Live & Interactive",
-    description: "One intensive day covering Strategy, Sales, Finance, Operations, HR, Marketing & AI Tools",
+    subtitle: "3 Hours, Live & Interactive",
+    description: "Fast-paced session covering essential frameworks, AI tools (ChatGPT, Perplexity, Canva, Gamma, Notion, Zapier, Vapi) & startup fundamentals",
     details: "Real-time learning with immediate application",
     color: "from-green-accent to-startup-blue"
   }, {
@@ -45,7 +45,7 @@ const NewJourneySection = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              8 Hours → 90 Days → Revenue Engine
+              3 Hours → 90 Days → Revenue Engine
             </p>
           </div>
 

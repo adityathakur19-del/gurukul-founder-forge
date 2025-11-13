@@ -10,13 +10,13 @@ const NewBonusesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-              Bonuses &{" "}
+              What You'll{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
-                Offers
+                Get
               </span>
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground">
-              Limited-time value packed exclusively for early birds
+              3-hour intensive workshop - Completely FREE (Worth ₹2,499)
             </p>
           </div>
 
@@ -26,16 +26,16 @@ const NewBonusesSection = () => {
               <div className="text-center space-y-6">
                 <div className="flex items-center justify-center space-x-2">
                   <Tag className="w-8 h-8 text-saffron" />
-                  <h3 className="text-3xl font-bold text-foreground">Early Bird Special</h3>
+                  <h3 className="text-3xl font-bold text-foreground">Free Workshop</h3>
                 </div>
                 
                   <div className="space-y-4">
                     <div className="flex items-center justify-center space-x-2 sm:space-x-4 flex-wrap">
-                      <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹24,999</span>
-                      <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-saffron break-words">₹1,999</span>
+                      <span className="text-lg sm:text-xl lg:text-3xl text-startup-gray line-through">₹2,499</span>
+                      <span className="text-3xl sm:text-4xl lg:text-6xl font-bold text-green-accent break-words">FREE</span>
                     </div>
-                    <div className="bg-green-accent text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
-                      Save 86%
+                    <div className="bg-saffron text-white px-6 py-2 rounded-full inline-block font-semibold animate-pulse-glow">
+                      100% Off - Limited Time
                     </div>
                   </div>
                   
@@ -45,9 +45,9 @@ const NewBonusesSection = () => {
                       <span className="font-semibold text-startup-blue text-lg">Limited Time Offer</span>
                     </div>
                     <ul className="text-left space-y-2 text-muted-foreground text-sm sm:text-base lg:text-lg">
-                      <li>• Less than 15 seats left</li>
-                      <li>• Early bird pricing ends soon</li>
-                      <li>• 40+ founders already registered</li>
+                      <li>• Only 20 FREE seats available</li>
+                      <li>• First-come, first-served basis</li>
+                      <li>• Registration closes when full</li>
                     </ul>
                   </div>
               </div>
@@ -87,36 +87,36 @@ const NewBonusesSection = () => {
                   </div>
                   
                   <div className="border-t-2 border-saffron/20 pt-4">
-                    <div className="flex justify-between items-center p-4 bg-gradient-to-r from-saffron/10 to-deep-saffron/10 rounded-xl border border-saffron/30">
+                    <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-accent/10 to-startup-blue/10 rounded-xl border border-green-accent/30">
                       <span className="text-xl font-bold text-foreground">Total Value</span>
-                      <span className="text-2xl font-bold text-saffron">₹24,999</span>
+                      <span className="text-2xl font-bold text-green-accent">₹2,499</span>
                     </div>
                   </div>
                   
-                  <div className="text-center text-xl font-semibold text-green-accent">
-                    You pay only: ₹1,999 – Save 86%
+                  <div className="text-center text-xl font-semibold text-green-accent mt-4">
+                    You Pay: FREE (Save 100%)
                   </div>
               </div>
             </div>
           </div>
 
-          {/* Additional Bonuses */}
+          {/* Additional Info */}
           <div className="mt-16 text-center">
             <div className="bg-gradient-to-r from-startup-blue/10 to-green-accent/10 rounded-xl p-8 border border-startup-blue/20 max-w-2xl mx-auto">
               <div className="flex items-center justify-center space-x-3 mb-4">
                 <UsersIcon className="w-6 h-6 text-startup-blue" />
-                <h4 className="text-xl font-semibold text-foreground">Bring Your Co-Founder</h4>
+                <h4 className="text-xl font-semibold text-foreground">Bring Your Team</h4>
               </div>
-              <p className="text-muted-foreground mb-3 text-lg">Second seat for just ₹1,499 extra (instead of ₹1,999). To avail the offer, contact us at contact@newgengurukul.com.</p>
+              <p className="text-muted-foreground mb-3 text-lg">Each team member can register separately. Limited to 20 total seats. First-come, first-served.</p>
             </div>
           </div>
 
           {/* CTA */}
           <div className="text-center mt-12">
             <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-6 sm:px-8 lg:px-12 py-4 sm:py-6 text-lg sm:text-xl max-w-full" onClick={redirectToPayment}>
-              Claim Early Bird ₹1,999/-
+              Register for FREE Workshop
             </Button>
-            <p className="text-sm text-muted-foreground mt-4">🔒 Secure payment • 💯 90-day plan guarantee</p>
+            <p className="text-sm text-muted-foreground mt-4">🎯 Limited to 20 FREE seats • ✨ First-come, first-served</p>
           </div>
         </div>
       </div>

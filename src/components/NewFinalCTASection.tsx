@@ -40,8 +40,8 @@ const NewFinalCTASection = () => {
             </div>
             <div className="bg-white/15 backdrop-blur-sm rounded-xl p-6 text-white hover:bg-white/25 transition-all duration-300 animate-fade-in-up delay-200">
               <Zap className="w-8 h-8 mx-auto mb-3 animate-pulse" />
-              <div className="text-2xl font-bold">₹13,001</div>
-              <div className="text-sm opacity-90">You Save Today</div>
+              <div className="text-2xl font-bold">₹2,499</div>
+              <div className="text-sm opacity-90">You Save Today (100% Free)</div>
             </div>
           </div>
 
@@ -51,9 +51,10 @@ const NewFinalCTASection = () => {
               Join 50 Founders in Building Your Repeatable Revenue Engine
             </h3>
             <div className="flex items-center justify-center space-x-4 text-white">
-              <span className="text-4xl font-bold">₹1,999</span>
+              <span className="text-2xl line-through opacity-75">₹2,499</span>
+              <span className="text-5xl font-bold">FREE</span>
               <span className="bg-green-accent px-4 py-2 rounded-full text-sm font-semibold animate-pulse-glow">
-                Save 86%
+                100% Off
               </span>
             </div>
             <p className="text-lg text-white/90">
@@ -81,7 +82,7 @@ const NewFinalCTASection = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <Clock className="w-5 h-5" />
-                    <span className="font-semibold">10 AM to 7 PM IST</span>
+                    <span className="font-semibold">10 AM to 1 PM IST</span>
                   </div>
                 </div>
               </div>
