@@ -59,31 +59,18 @@ const NewBonusesSection = () => {
               
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">8-hour intensive workshop</span>
-                    <span className="font-bold text-saffron text-lg">₹7,999</span>
+                    <span className="font-medium text-foreground text-lg">3-hour intensive workshop</span>
+                    <span className="font-bold text-saffron text-lg">₹1,499</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">Templates and Frameworks</span>
-                    <span className="font-bold text-saffron text-lg">₹3,000</span>
+                    <span className="font-bold text-saffron text-lg">₹500</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
                     <span className="font-medium text-foreground text-lg">AI Tools shortlist and tips</span>
-                    <span className="font-bold text-saffron text-lg">₹2,000</span>
-                  </div>
-                  
-                  <div className="flex justify-between items-center p-4 bg-white rounded-xl shadow-soft">
-                    <span className="font-medium text-foreground text-lg">Session Recording cost</span>
-                    <span className="font-bold text-saffron text-lg">₹2,000</span>
-                  </div>
-                  
-                  <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-accent/10 to-startup-blue/10 rounded-xl shadow-soft border border-green-accent/30">
-                    <div className="flex items-center space-x-2">
-                      <Gift className="w-5 h-5 text-green-accent" />
-                      <span className="font-medium text-foreground text-lg">Bonus 1:1 Expert call cost</span>
-                    </div>
-                    <span className="font-bold text-saffron text-lg">₹10,000</span>
+                    <span className="font-bold text-saffron text-lg">₹500</span>
                   </div>
                   
                   <div className="border-t-2 border-saffron/20 pt-4">
@@ -95,6 +82,16 @@ const NewBonusesSection = () => {
                   
                   <div className="text-center text-xl font-semibold text-green-accent mt-4">
                     You Pay: FREE (Save 100%)
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-gradient-to-r from-green-accent/10 to-startup-blue/10 rounded-xl border border-green-accent/30">
+                    <div className="flex items-center justify-center space-x-2 mb-2">
+                      <Gift className="w-5 h-5 text-green-accent" />
+                      <span className="font-semibold text-foreground text-lg">Exclusive Bonus</span>
+                    </div>
+                    <p className="text-center text-muted-foreground text-base">
+                      Complimentary 30-min 1:1 Expert Call (Worth ₹5,000)
+                    </p>
                   </div>
               </div>
             </div>
