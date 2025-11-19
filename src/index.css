@@ -17,17 +17,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 30 25% 15%;
 
-    /* Saffron - Primary brand color */
-    --primary: 35 90% 55%;
+    /* Gold - Primary brand color from logo */
+    --primary: 42 48% 58%;
     --primary-foreground: 0 0% 100%;
 
-    /* Deep Saffron - Secondary warm accent */
-    --secondary: 30 95% 50%;
+    /* Bronze - Secondary accent from logo */
+    --secondary: 38 42% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Green Accent - Fresh growth color */
-    --accent: 120 40% 45%;
-    --accent-foreground: 0 0% 100%;
+    /* Dark Teal - Background accent from logo */
+    --accent: 180 60% 12%;
+    --accent-foreground: 42 48% 58%;
 
     --muted: 45 20% 95%;
     --muted-foreground: 30 15% 40%;
@@ -39,24 +39,24 @@ All colors MUST be HSL.
     --input: 45 20% 95%;
     --ring: 25 100% 60%;
 
-    /* Custom design tokens */
-    --saffron: 35 90% 55%;
-    --deep-saffron: 30 95% 50%;
-    --startup-blue: 215 70% 45%;
-    --startup-gray: 220 15% 60%;
-    --green-accent: 120 40% 45%;
+    /* Custom design tokens - Updated to match logo colors */
+    --saffron: 42 48% 58%;
+    --deep-saffron: 38 42% 55%;
+    --startup-blue: 180 60% 12%;
+    --startup-gray: 180 20% 30%;
+    --green-accent: 42 48% 58%;
     --warm-white: 45 30% 98%;
     --soft-gray: 30 10% 90%;
     
-    /* Gradients */
-    --gradient-saffron: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--deep-saffron)));
-    --gradient-startup: linear-gradient(135deg, hsl(var(--startup-blue)), hsl(220 70% 55%));
+    /* Gradients - Updated with logo gold colors */
+    --gradient-saffron: linear-gradient(135deg, hsl(42 48% 58%), hsl(38 42% 55%));
+    --gradient-startup: linear-gradient(135deg, hsl(180 60% 12%), hsl(180 40% 18%));
     --gradient-warm: linear-gradient(180deg, hsl(var(--warm-white)), hsl(45 20% 95%));
-    --gradient-growth: linear-gradient(135deg, hsl(var(--green-accent)), hsl(120 50% 55%));
+    --gradient-growth: linear-gradient(135deg, hsl(42 48% 58%), hsl(42 55% 65%));
 
-    /* Shadows */
-    --shadow-warm: 0 10px 30px -10px hsl(var(--saffron) / 0.2);
-    --shadow-startup: 0 10px 30px -10px hsl(var(--startup-blue) / 0.2);
+    /* Shadows - Updated with gold tones */
+    --shadow-warm: 0 10px 30px -10px hsl(42 48% 58% / 0.2);
+    --shadow-startup: 0 10px 30px -10px hsl(180 60% 12% / 0.3);
     --shadow-soft: 0 4px 20px -5px hsl(30 20% 80% / 0.3);
 
     --radius: 0.5rem;
