@@ -24,11 +24,11 @@ const OptimizedHeroSection = () => {
           <div className="text-center space-y-6 sm:space-y-8">
             {/* H1 Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight px-4">
-              Indian Startup Leaders:{" "}
+              Indian Professionals:{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
-                Build a Smarter Business with AI
+                Build your career better with AI
               </span>{" "}
-              in 3 Hours
+              in 3 hours
             </h1>
             
             {/* Subheadline */}
