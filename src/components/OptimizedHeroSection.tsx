@@ -12,7 +12,7 @@ const OptimizedHeroSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <img src="/lovable-uploads/newgen-gurukul-logo.png" alt="NewGen Gurukul - Build Smarter with AI" className="h-24 sm:h-32 w-auto" />
+            <img src="/lovable-uploads/company-logo.png" alt="NewGen Gurukul - Build Smarter with AI" className="h-24 sm:h-32 w-auto" />
           </div>
           
           {/* Main Content */}

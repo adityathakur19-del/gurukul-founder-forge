@@ -8,7 +8,7 @@ const OptimizedFooterSection = () => {
           {/* Logo and Description */}
           <div className="text-center mb-8">
             <img 
-              src="/lovable-uploads/newgen-gurukul-logo.png" 
+              src="/lovable-uploads/company-logo.png" 
               alt="NewGen Gurukul" 
               className="h-20 w-auto mx-auto mb-4"
             />
