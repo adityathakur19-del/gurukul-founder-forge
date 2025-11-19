@@ -1,7 +1,7 @@
-import OptimizedLandingPage from "./OptimizedLandingPage";
+import NewLandingPage from "./NewLandingPage";
 
 const Index = () => {
-  return <OptimizedLandingPage />;
+  return <NewLandingPage />;
 };
 
 export default Index;
