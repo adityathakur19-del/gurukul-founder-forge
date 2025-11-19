@@ -10,14 +10,14 @@ const ThisIsForYouSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-b from-background to-warm-white">
+    <section className="py-16 sm:py-20 bg-gradient-to-b from-off-white to-soft-cream">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               This Workshop Is{" "}
-              <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">
                 For You If…
               </span>
             </h2>
@@ -32,7 +32,7 @@ const ThisIsForYouSection = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex-shrink-0 mt-1">
-                  <CheckCircle className="w-6 h-6 text-green-accent" />
+                  <CheckCircle className="w-6 h-6 text-gold" />
                 </div>
                 <p 
                   className="text-base sm:text-lg text-foreground leading-relaxed"

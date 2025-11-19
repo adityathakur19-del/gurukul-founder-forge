@@ -4,9 +4,9 @@ const OptimizedHeroSection = () => {
   const {
     redirectToPayment
   } = usePaymentRedirect();
-  return <section className="relative min-h-[90vh] bg-gradient-to-br from-warm-white via-background to-saffron/5 flex items-center justify-center overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-5 bg-lotus-pattern"></div>
+  return <section className="relative min-h-[90vh] bg-gradient-to-br from-emerald via-emerald-light to-emerald-dark flex items-center justify-center overflow-hidden">
+      {/* Subtle circuit pattern overlay */}
+      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.1),transparent_50%)]"></div>
       
       <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
         <div className="max-w-5xl mx-auto">
@@ -18,9 +18,9 @@ const OptimizedHeroSection = () => {
           {/* Main Content */}
           <div className="text-center space-y-6 sm:space-y-8">
             {/* H1 Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight px-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight px-4 text-off-white">
               Indian Professionals:{" "}
-              <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent">
                 Build your career better with AI
               </span>{" "}
               in 3 hours
@@ -33,12 +33,17 @@ const OptimizedHeroSection = () => {
             
             {/* Primary CTA */}
             <div className="flex flex-col items-center space-y-3 pt-4">
-              <Button size="lg" className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl font-semibold shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto max-w-md" onClick={redirectToPayment}>
+              <Button 
+                variant="cta"
+                size="lg" 
+                className="px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl font-semibold w-full sm:w-auto max-w-md" 
+                onClick={redirectToPayment}
+              >
                 Reserve My Free Seat
               </Button>
               
               {/* Supporting Micro-copy */}
-              <p className="text-sm sm:text-base text-muted-foreground">
+              <p className="text-sm sm:text-base text-gold-light">
                 100% free. Live, practical, and focused on real business use-cases.
               </p>
             </div>

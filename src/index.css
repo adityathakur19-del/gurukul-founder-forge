@@ -8,56 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 30 25% 15%;
+    /* Deep emerald green backgrounds */
+    --background: 180 10% 95%;
+    --foreground: 180 60% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 30 25% 15%;
+    --card-foreground: 180 60% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 25% 15%;
+    --popover-foreground: 180 60% 8%;
 
-    /* Gold - Primary brand color from logo */
-    --primary: 42 48% 58%;
-    --primary-foreground: 0 0% 100%;
+    /* Metallic Gold - Primary brand color from logo */
+    --primary: 43 64% 53%;
+    --primary-foreground: 180 60% 8%;
 
-    /* Bronze - Secondary accent from logo */
-    --secondary: 38 42% 55%;
-    --secondary-foreground: 0 0% 100%;
+    /* Light Gold - Secondary accent */
+    --secondary: 42 58% 60%;
+    --secondary-foreground: 180 60% 8%;
 
-    /* Dark Teal - Background accent from logo */
+    /* Deep Emerald - Dark accent from logo background */
     --accent: 180 60% 12%;
-    --accent-foreground: 42 48% 58%;
+    --accent-foreground: 43 64% 53%;
 
-    --muted: 45 20% 95%;
-    --muted-foreground: 30 15% 40%;
+    --muted: 180 10% 90%;
+    --muted-foreground: 180 20% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 20% 90%;
-    --input: 45 20% 95%;
-    --ring: 25 100% 60%;
+    --border: 180 15% 85%;
+    --input: 180 10% 90%;
+    --ring: 43 64% 53%;
 
-    /* Custom design tokens - Updated to match logo colors */
-    --saffron: 42 48% 58%;
-    --deep-saffron: 38 42% 55%;
-    --startup-blue: 180 60% 12%;
-    --startup-gray: 180 20% 30%;
-    --green-accent: 42 48% 58%;
-    --warm-white: 45 30% 98%;
-    --soft-gray: 30 10% 90%;
+    /* NewGen Gurukul Brand Tokens - Deep Emerald + Metallic Gold */
+    --emerald-dark: 180 60% 8%;
+    --emerald: 180 60% 12%;
+    --emerald-light: 180 40% 18%;
+    --gold: 43 64% 53%;
+    --gold-light: 42 58% 60%;
+    --gold-dark: 44 70% 48%;
+    --off-white: 180 10% 98%;
+    --soft-cream: 45 20% 96%;
     
-    /* Gradients - Updated with logo gold colors */
-    --gradient-saffron: linear-gradient(135deg, hsl(42 48% 58%), hsl(38 42% 55%));
-    --gradient-startup: linear-gradient(135deg, hsl(180 60% 12%), hsl(180 40% 18%));
-    --gradient-warm: linear-gradient(180deg, hsl(var(--warm-white)), hsl(45 20% 95%));
-    --gradient-growth: linear-gradient(135deg, hsl(42 48% 58%), hsl(42 55% 65%));
+    /* Gradients - NewGen Gurukul Brand */
+    --gradient-gold: linear-gradient(135deg, hsl(43 64% 53%), hsl(42 58% 60%));
+    --gradient-emerald: linear-gradient(135deg, hsl(180 60% 8%), hsl(180 60% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 60% 12%), hsl(180 40% 18%));
+    --gradient-premium: linear-gradient(135deg, hsl(43 64% 53%), hsl(44 70% 48%));
 
-    /* Shadows - Updated with gold tones */
-    --shadow-warm: 0 10px 30px -10px hsl(42 48% 58% / 0.2);
-    --shadow-startup: 0 10px 30px -10px hsl(180 60% 12% / 0.3);
-    --shadow-soft: 0 4px 20px -5px hsl(30 20% 80% / 0.3);
+    /* Shadows - Brand-aligned */
+    --shadow-gold: 0 10px 30px -10px hsl(43 64% 53% / 0.3);
+    --shadow-emerald: 0 10px 30px -10px hsl(180 60% 12% / 0.4);
+    --shadow-soft: 0 4px 20px -5px hsl(180 20% 50% / 0.15);
 
     --radius: 0.5rem;
 
