@@ -52,14 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom workshop theme colors
-				saffron: 'hsl(var(--saffron))',
-				'deep-saffron': 'hsl(var(--deep-saffron))',
-				'startup-blue': 'hsl(var(--startup-blue))',
-				'startup-gray': 'hsl(var(--startup-gray))',
-				'green-accent': 'hsl(var(--green-accent))',
-				'warm-white': 'hsl(var(--warm-white))',
-				'soft-gray': 'hsl(var(--soft-gray))',
+				// NewGen Gurukul brand colors
+				'emerald-dark': 'hsl(var(--emerald-dark))',
+				'emerald': 'hsl(var(--emerald))',
+				'emerald-light': 'hsl(var(--emerald-light))',
+				'gold': 'hsl(var(--gold))',
+				'gold-light': 'hsl(var(--gold-light))',
+				'gold-dark': 'hsl(var(--gold-dark))',
+				'off-white': 'hsl(var(--off-white))',
+				'soft-cream': 'hsl(var(--soft-cream))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -111,8 +112,8 @@ export default {
 					'100%': { transform: 'translateY(0)', opacity: '1' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--saffron) / 0.3)' },
-					'50%': { boxShadow: '0 0 40px hsl(var(--saffron) / 0.6)' }
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--gold) / 0.3)' },
+					'50%': { boxShadow: '0 0 40px hsl(var(--gold) / 0.6)' }
 				}
 			},
 			animation: {

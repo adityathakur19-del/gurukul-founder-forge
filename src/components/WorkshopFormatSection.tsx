@@ -29,14 +29,14 @@ const WorkshopFormatSection = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-b from-background to-warm-white">
+    <section className="py-16 sm:py-20 bg-gradient-to-b from-off-white to-soft-cream">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               What Happens{" "}
-              <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">
                 Inside the Workshop
               </span>
             </h2>
@@ -56,13 +56,13 @@ const WorkshopFormatSection = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-saffron to-deep-saffron rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-xl">{block.number}</span>
+                    <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
+                      <span className="text-emerald-dark font-bold text-xl">{block.number}</span>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center space-x-3 mb-3">
-                      <IconComponent className="w-6 h-6 text-saffron" />
+                      <IconComponent className="w-6 h-6 text-gold" />
                       <h3 className="text-xl sm:text-2xl font-bold text-foreground">
                         {block.title}
                       </h3>
@@ -77,7 +77,7 @@ const WorkshopFormatSection = () => {
           </div>
           
           {/* Important Notes */}
-          <div className="bg-gradient-to-r from-green-accent/10 to-startup-blue/10 rounded-xl p-6 sm:p-8 border border-green-accent/20 text-center">
+          <div className="bg-emerald/5 rounded-xl p-6 sm:p-8 border border-gold/20 text-center">
             <div className="space-y-3">
               <p className="text-base sm:text-lg text-foreground">
                 <strong>Live, interactive</strong> • <strong>100% free</strong> • <strong>No catch, no forced upsell</strong>

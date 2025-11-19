@@ -9,19 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-warm hover:shadow-lg hover:-translate-y-0.5",
+        default: "bg-gold text-emerald-dark hover:bg-gold-dark shadow-gold hover:shadow-xl hover:-translate-y-0.5",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border-2 border-primary bg-background text-primary hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-warm hover:-translate-y-0.5",
+          "border-2 border-gold bg-transparent text-gold hover:bg-gold hover:text-emerald-dark shadow-soft hover:shadow-gold hover:-translate-y-0.5",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-warm hover:shadow-lg hover:-translate-y-0.5",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-saffron to-deep-saffron text-white hover:from-deep-saffron hover:to-saffron shadow-warm hover:shadow-xl hover:-translate-y-1 text-base font-bold animate-pulse-glow",
-        startup: "bg-startup-blue text-white hover:bg-startup-blue/90 shadow-startup hover:shadow-lg hover:-translate-y-0.5",
-        cta: "bg-gradient-to-r from-primary to-secondary text-white hover:from-secondary hover:to-primary shadow-warm hover:shadow-xl hover:-translate-y-1 text-lg font-bold",
-        growth: "bg-gradient-to-r from-green-accent to-accent text-white hover:from-accent hover:to-green-accent shadow-soft hover:shadow-lg hover:-translate-y-0.5",
+          "bg-emerald text-gold hover:bg-emerald-light shadow-emerald hover:shadow-xl hover:-translate-y-0.5",
+        ghost: "hover:bg-emerald/10 hover:text-gold",
+        link: "text-gold underline-offset-4 hover:underline hover:text-gold-light",
+        hero: "bg-gradient-to-r from-gold to-gold-light text-emerald-dark hover:from-gold-dark hover:to-gold shadow-gold hover:shadow-2xl hover:-translate-y-1 text-base font-bold",
+        premium: "bg-emerald text-gold hover:bg-emerald-dark shadow-emerald hover:shadow-xl hover:-translate-y-0.5",
+        cta: "bg-gradient-to-r from-gold via-gold-light to-gold-dark text-emerald-dark hover:from-gold-dark hover:to-gold shadow-gold hover:shadow-2xl hover:-translate-y-1 text-lg font-bold",
       },
       size: {
         default: "h-10 px-4 py-2",
