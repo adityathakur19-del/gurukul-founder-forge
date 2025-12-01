@@ -87,101 +87,89 @@ const EvergreenHeroSection = () => {
 
           {/* Right Visual */}
           <div className="relative animate-fade-in-scale delay-300">
-            <div className="bg-white rounded-2xl shadow-soft border border-border p-8 relative overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-soft border border-border p-6 relative overflow-hidden">
               {/* Background Accent */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-saffron/10 to-transparent rounded-full blur-3xl"></div>
               
               {/* Workflow Board Visual */}
-              <div className="relative z-10 space-y-6">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Your AI Execution Stack</h3>
-                  <p className="text-muted-foreground">Structured workflows that drive revenue</p>
+              <div className="relative z-10 space-y-4">
+                <div className="text-center mb-4">
+                  <h3 className="text-xl font-bold text-foreground mb-1">Your AI Execution Stack</h3>
+                  <p className="text-sm text-muted-foreground">Structured workflows that drive revenue</p>
                 </div>
 
                 {/* Workflow Columns */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-3">
                   {/* Sales Column */}
-                  <div className="bg-gradient-to-br from-green-accent/10 to-green-accent/5 rounded-xl p-4 border border-green-accent/20">
-                    <div className="flex items-center space-x-2 mb-3">
-                      <TrendingUp className="w-5 h-5 text-green-accent" />
-                      <h4 className="font-semibold text-foreground">Sales</h4>
+                  <div className="bg-gradient-to-br from-green-accent/10 to-green-accent/5 rounded-lg p-3 border border-green-accent/20">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <TrendingUp className="w-4 h-4 text-green-accent" />
+                      <h4 className="text-sm font-semibold text-foreground">Sales</h4>
                     </div>
-                    <div className="space-y-2">
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                    <div className="space-y-1.5">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Lead generation
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Outreach automation
-                      </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
-                        Follow-ups
                       </div>
                     </div>
                   </div>
 
                   {/* Marketing Column */}
-                  <div className="bg-gradient-to-br from-startup-blue/10 to-startup-blue/5 rounded-xl p-4 border border-startup-blue/20">
-                    <div className="flex items-center space-x-2 mb-3">
-                      <Zap className="w-5 h-5 text-startup-blue" />
-                      <h4 className="font-semibold text-foreground">Marketing</h4>
+                  <div className="bg-gradient-to-br from-startup-blue/10 to-startup-blue/5 rounded-lg p-3 border border-startup-blue/20">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Zap className="w-4 h-4 text-startup-blue" />
+                      <h4 className="text-sm font-semibold text-foreground">Marketing</h4>
                     </div>
-                    <div className="space-y-2">
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                    <div className="space-y-1.5">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Content creation
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Social media
-                      </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
-                        Analytics
                       </div>
                     </div>
                   </div>
 
                   {/* Ops Column */}
-                  <div className="bg-gradient-to-br from-saffron/10 to-saffron/5 rounded-xl p-4 border border-saffron/20">
-                    <div className="flex items-center space-x-2 mb-3">
-                      <CheckCircle className="w-5 h-5 text-saffron" />
-                      <h4 className="font-semibold text-foreground">Ops</h4>
+                  <div className="bg-gradient-to-br from-saffron/10 to-saffron/5 rounded-lg p-3 border border-saffron/20">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <CheckCircle className="w-4 h-4 text-saffron" />
+                      <h4 className="text-sm font-semibold text-foreground">Ops</h4>
                     </div>
-                    <div className="space-y-2">
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                    <div className="space-y-1.5">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Process automation
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Documentation
-                      </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
-                        Project tracking
                       </div>
                     </div>
                   </div>
 
                   {/* Hiring Column */}
-                  <div className="bg-gradient-to-br from-accent/10 to-accent/5 rounded-xl p-4 border border-accent/20">
-                    <div className="flex items-center space-x-2 mb-3">
-                      <Users className="w-5 h-5 text-accent" />
-                      <h4 className="font-semibold text-foreground">Hiring</h4>
+                  <div className="bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg p-3 border border-accent/20">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Users className="w-4 h-4 text-accent" />
+                      <h4 className="text-sm font-semibold text-foreground">Hiring</h4>
                     </div>
-                    <div className="space-y-2">
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                    <div className="space-y-1.5">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Job descriptions
                       </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
+                      <div className="bg-white rounded p-2 text-xs border border-border shadow-sm">
                         Screening
-                      </div>
-                      <div className="bg-white rounded-lg p-3 text-sm border border-border shadow-sm">
-                        Onboarding
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Revenue Metric */}
-                <div className="bg-gradient-to-r from-green-accent to-accent rounded-xl p-6 text-white text-center">
-                  <div className="text-sm font-medium mb-1">Revenue Impact</div>
-                  <div className="text-3xl font-bold flex items-center justify-center space-x-2">
-                    <TrendingUp className="w-8 h-8" />
+                <div className="bg-gradient-to-r from-green-accent to-accent rounded-lg p-4 text-white text-center">
+                  <div className="text-xs font-medium mb-1">Revenue Impact</div>
+                  <div className="text-xl font-bold flex items-center justify-center space-x-2">
+                    <TrendingUp className="w-6 h-6" />
                     <span>Clear Path Forward</span>
                   </div>
                 </div>
