@@ -1,8 +1,6 @@
 import { Brain, BookOpen, Zap } from "lucide-react";
-
 const EvergreenAIFrameworksSection = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
@@ -32,11 +30,11 @@ const EvergreenAIFrameworksSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-startup-blue rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Business Model Canvas</span>
+                  <span>TAM/SAM/SOM</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-startup-blue rounded-full mt-2 flex-shrink-0"></span>
-                  <span>7Ps of Marketing</span>
+                  <span>Business Canvas model</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-startup-blue rounded-full mt-2 flex-shrink-0"></span>
@@ -44,11 +42,11 @@ const EvergreenAIFrameworksSection = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-startup-blue rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Financial Modeling Basics</span>
+                  <span>Customer Service Automation</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-startup-blue rounded-full mt-2 flex-shrink-0"></span>
-                  <span>OKR & Metric Tracking</span>
+                  <span>Correct Hiring and onbaording frameworks</span>
                 </li>
               </ul>
             </div>
@@ -64,7 +62,7 @@ const EvergreenAIFrameworksSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-saffron rounded-full mt-2 flex-shrink-0"></span>
-                  <span>ChatGPT for strategy & content</span>
+                  <span>ChatGPT, Gemini and Claude for strategy & content</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-saffron rounded-full mt-2 flex-shrink-0"></span>
@@ -80,7 +78,7 @@ const EvergreenAIFrameworksSection = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-saffron rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Zapier for automation</span>
+                  <span>Zapier/N8N for automation</span>
                 </li>
               </ul>
             </div>
@@ -112,15 +110,13 @@ const EvergreenAIFrameworksSection = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-green-accent rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Tailored to your startup</span>
+                  <span>Tailored to business function</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default EvergreenAIFrameworksSection;
