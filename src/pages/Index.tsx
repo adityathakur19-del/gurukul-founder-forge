@@ -1,7 +1,7 @@
-import NewLandingPage from "./NewLandingPage";
+import EvergreenLandingPage from "./EvergreenLandingPage";
 
 const Index = () => {
-  return <NewLandingPage />;
+  return <EvergreenLandingPage />;
 };
 
 export default Index;
