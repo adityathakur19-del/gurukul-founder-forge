@@ -22,8 +22,14 @@ const EvergreenFoundersSection = () => {
             {/* Founder 1: Aditya */}
             <div className="bg-gradient-to-br from-warm-white to-muted/30 rounded-2xl p-6 sm:p-8 border border-saffron/20 shadow-warm animate-fade-in-up">
               <div className="space-y-4 sm:space-y-6">
-                {/* Photo placeholder - will be added */}
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-saffron/20 to-deep-saffron/20 border-4 border-saffron/30 mx-auto mb-4"></div>
+                {/* Aditya's Photo */}
+                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-saffron/30 mx-auto mb-4 shadow-lg">
+                  <img 
+                    src="/lovable-uploads/aditya-thakur.png" 
+                    alt="Aditya Thakur - Founder of NewGen Gurukul"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 
                 <div className="text-center space-y-2">
                   <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Aditya Thakur</h3>
