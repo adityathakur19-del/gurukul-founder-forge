@@ -47,7 +47,7 @@ const EvergreenFinalCTASection = () => {
                 className="border-2 border-saffron text-saffron hover:bg-saffron hover:text-white px-8 py-6 text-lg font-semibold hover:-translate-y-0.5 transition-all"
                 onClick={handleSecondaryCTA}
               >
-                Join Founders & Leaders WhatsApp Group
+                6-Weeks AI-First Execution Sprint @ ₹7,999
               </Button>
             </div>
 
