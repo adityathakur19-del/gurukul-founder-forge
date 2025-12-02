@@ -2,6 +2,7 @@ import EvergreenHeroSection from "@/components/EvergreenHeroSection";
 import EvergreenWhoSection from "@/components/EvergreenWhoSection";
 import EvergreenWhatYouGetSection from "@/components/EvergreenWhatYouGetSection";
 import EvergreenAIFrameworksSection from "@/components/EvergreenAIFrameworksSection";
+import EvergreenFoundersSection from "@/components/EvergreenFoundersSection";
 import EvergreenProofSection from "@/components/EvergreenProofSection";
 import EvergreenFinalCTASection from "@/components/EvergreenFinalCTASection";
 import ContactUsSection from "@/components/ContactUsSection";
@@ -14,6 +15,7 @@ const EvergreenLandingPage = () => {
       <EvergreenWhoSection />
       <EvergreenWhatYouGetSection />
       <EvergreenAIFrameworksSection />
+      <EvergreenFoundersSection />
       <EvergreenProofSection />
       <EvergreenFinalCTASection />
       <ContactUsSection />
