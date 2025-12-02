@@ -38,7 +38,7 @@ const EvergreenFinalCTASection = () => {
                 className="bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-8 py-6 text-lg font-semibold shadow-warm hover:shadow-xl hover:-translate-y-0.5 transition-all group"
                 onClick={handlePrimaryCTA}
               >
-                Get Details on 9-Hour Bootcamp
+                9 hour Business Fundamental with AI Bootcamp @ 1,999/- Only
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
