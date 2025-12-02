@@ -46,7 +46,7 @@ const EvergreenAIFrameworksSection = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-startup-blue rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Correct Hiring and onbaording frameworks</span>
+                  <span>Accurate Hiring and onbaording frameworks</span>
                 </li>
               </ul>
             </div>
@@ -78,7 +78,7 @@ const EvergreenAIFrameworksSection = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="w-1.5 h-1.5 bg-saffron rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Zapier/N8N for automation</span>
+                  <span>Zapier, N8N. Lovable for automation</span>
                 </li>
               </ul>
             </div>
