@@ -5,6 +5,7 @@ import EvergreenAIFrameworksSection from "@/components/EvergreenAIFrameworksSect
 import EvergreenFoundersSection from "@/components/EvergreenFoundersSection";
 import EvergreenLeadMagnetSection from "@/components/EvergreenLeadMagnetSection";
 import EvergreenProofSection from "@/components/EvergreenProofSection";
+import EvergreenFAQSection from "@/components/EvergreenFAQSection";
 import EvergreenFinalCTASection from "@/components/EvergreenFinalCTASection";
 import ContactUsSection from "@/components/ContactUsSection";
 import FloatingChatBubble from "@/components/FloatingChatBubble";
@@ -19,6 +20,7 @@ const EvergreenLandingPage = () => {
       <EvergreenFoundersSection />
       <EvergreenLeadMagnetSection />
       <EvergreenProofSection />
+      <EvergreenFAQSection />
       <EvergreenFinalCTASection />
       <ContactUsSection />
       <FloatingChatBubble />
