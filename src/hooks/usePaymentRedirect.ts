@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const REGISTRATION_FORM_URL = 'https://forms.gle/QqYW7A7bNpxGnubq6';
+const REGISTRATION_FORM_URL = 'https://payments.cashfree.com/forms/NEWGENGURUKULFOUNDERWORKSHOP';
 
 // Hook for handling registration form redirects
 export const usePaymentRedirect = () => {

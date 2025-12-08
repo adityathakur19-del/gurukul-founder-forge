@@ -6,7 +6,7 @@ const EvergreenFinalCTASection = () => {
   const timeLeft = useCountdown('2025-12-21T10:00:00+05:30', true);
 
   const handleReserveSeat = () => {
-    window.location.href = 'https://forms.gle/QqYW7A7bNpxGnubq6';
+    window.location.href = 'https://payments.cashfree.com/forms/NEWGENGURUKULFOUNDERWORKSHOP';
   };
 
   return (
