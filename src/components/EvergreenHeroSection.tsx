@@ -3,11 +3,11 @@ import { CheckCircle, TrendingUp, Users, Zap } from "lucide-react";
 
 const EvergreenHeroSection = () => {
   const handlePrimaryCTA = () => {
-    window.location.href = 'https://forms.gle/QqYW7A7bNpxGnubq6';
+    window.location.href = 'https://payments.cashfree.com/forms/NEWGENGURUKULFOUNDERWORKSHOP';
   };
 
   const handleSecondaryCTA = () => {
-    window.location.href = 'https://forms.gle/QqYW7A7bNpxGnubq6';
+    window.location.href = 'https://chat.whatsapp.com/GMmI4uX5gLOAPuMHkSmic9?mode=hqrt3';
   };
 
   return (
@@ -166,13 +166,16 @@ const EvergreenHeroSection = () => {
                 </div>
 
                 {/* Revenue Metric */}
-                <div className="bg-gradient-to-r from-green-accent to-accent rounded-lg p-4 text-white text-center">
+                <a 
+                  href="https://payments.cashfree.com/forms/NEWGENGURUKULFOUNDERWORKSHOP"
+                  className="block bg-gradient-to-r from-green-accent to-accent rounded-lg p-4 text-white text-center hover:opacity-90 transition-opacity cursor-pointer"
+                >
                   <div className="text-xs font-medium mb-1">Revenue Impact</div>
                   <div className="text-xl font-bold flex items-center justify-center space-x-2">
                     <TrendingUp className="w-6 h-6" />
                     <span>Clear Path Forward</span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
