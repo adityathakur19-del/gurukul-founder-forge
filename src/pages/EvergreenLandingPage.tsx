@@ -10,8 +10,10 @@ import EvergreenFinalCTASection from "@/components/EvergreenFinalCTASection";
 import ContactUsSection from "@/components/ContactUsSection";
 import FooterSection from "@/components/FooterSection";
 import FloatingChatBubble from "@/components/FloatingChatBubble";
+
 const EvergreenLandingPage = () => {
-  return <main className="min-h-screen overflow-x-hidden">
+  return (
+    <main className="min-h-screen overflow-x-hidden">
       <EvergreenHeroSection />
       <EvergreenWhoSection />
       <EvergreenWhatYouGetSection />
@@ -20,10 +22,12 @@ const EvergreenLandingPage = () => {
       <EvergreenLeadMagnetSection />
       <EvergreenProofSection />
       <EvergreenFAQSection />
-      
+      <EvergreenFinalCTASection />
       <ContactUsSection />
       <FooterSection />
       <FloatingChatBubble />
-    </main>;
+    </main>
+  );
 };
+
 export default EvergreenLandingPage;
