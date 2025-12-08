@@ -8,6 +8,7 @@ import EvergreenProofSection from "@/components/EvergreenProofSection";
 import EvergreenFAQSection from "@/components/EvergreenFAQSection";
 import EvergreenFinalCTASection from "@/components/EvergreenFinalCTASection";
 import ContactUsSection from "@/components/ContactUsSection";
+import FooterSection from "@/components/FooterSection";
 import FloatingChatBubble from "@/components/FloatingChatBubble";
 
 const EvergreenLandingPage = () => {
@@ -23,6 +24,7 @@ const EvergreenLandingPage = () => {
       <EvergreenFAQSection />
       <EvergreenFinalCTASection />
       <ContactUsSection />
+      <FooterSection />
       <FloatingChatBubble />
     </main>
   );
