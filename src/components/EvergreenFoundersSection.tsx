@@ -1,29 +1,29 @@
 const EvergreenFoundersSection = () => {
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-muted/30 overflow-x-hidden">
-      <div className="container mx-auto px-4 sm:px-6 max-w-full">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background to-muted/30 overflow-x-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold break-words">
+          <div className="text-center space-y-3 sm:space-y-4 lg:space-y-6 mb-10 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
               Built by{" "}
               <span className="bg-gradient-to-r from-saffron to-deep-saffron bg-clip-text text-transparent">
                 operators, not influencers.
               </span>
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               We've spent years building, running, and fixing real businesses – now we help founders 
               and leaders install AI-first execution into their own teams.
             </p>
           </div>
 
           {/* Founders Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-10 sm:mb-12">
             {/* Founder 1: Aditya */}
-            <div className="bg-gradient-to-br from-warm-white to-muted/30 rounded-2xl p-6 sm:p-8 border border-saffron/20 shadow-warm animate-fade-in-up">
-              <div className="space-y-4 sm:space-y-6">
+            <div className="bg-gradient-to-br from-warm-white to-muted/30 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 border border-saffron/20 shadow-warm animate-fade-in-up">
+              <div className="space-y-4 sm:space-y-5 lg:space-y-6">
                 {/* Aditya's Photo */}
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-saffron/30 mx-auto mb-4 shadow-lg">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-saffron/30 mx-auto shadow-lg">
                   <img 
                     src="/lovable-uploads/aditya-thakur.png" 
                     alt="Aditya Thakur - Founder of NewGen Gurukul"
@@ -31,14 +31,14 @@ const EvergreenFoundersSection = () => {
                   />
                 </div>
                 
-                <div className="text-center space-y-2">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Aditya Thakur</h3>
-                  <p className="text-base sm:text-lg text-saffron font-semibold">
+                <div className="text-center space-y-1 sm:space-y-2">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground">Aditya Thakur</h3>
+                  <p className="text-sm sm:text-base lg:text-lg text-saffron font-semibold">
                     Founder, NewGen Gurukul • Growth & Execution Coach
                   </p>
                 </div>
 
-                <div className="space-y-4 text-base sm:text-lg text-muted-foreground">
+                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-muted-foreground">
                   <p className="leading-relaxed">
                     <strong className="text-foreground">Startup Veteran & Growth Strategist:</strong>
                     <br />
@@ -55,19 +55,19 @@ const EvergreenFoundersSection = () => {
             </div>
 
             {/* Founder 2: Vaibhav */}
-            <div className="bg-gradient-to-br from-warm-white to-muted/30 rounded-2xl p-6 sm:p-8 border border-startup-blue/20 shadow-warm animate-fade-in-up delay-200">
-              <div className="space-y-4 sm:space-y-6">
-                {/* Photo placeholder - will be added */}
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-startup-blue/20 to-green-accent/20 border-4 border-startup-blue/30 mx-auto mb-4"></div>
+            <div className="bg-gradient-to-br from-warm-white to-muted/30 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 border border-startup-blue/20 shadow-warm animate-fade-in-up delay-200">
+              <div className="space-y-4 sm:space-y-5 lg:space-y-6">
+                {/* Photo placeholder */}
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-br from-startup-blue/20 to-green-accent/20 border-4 border-startup-blue/30 mx-auto"></div>
                 
-                <div className="text-center space-y-2">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Vaibhav Jaiswal</h3>
-                  <p className="text-base sm:text-lg text-startup-blue font-semibold">
+                <div className="text-center space-y-1 sm:space-y-2">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground">Vaibhav Jaiswal</h3>
+                  <p className="text-sm sm:text-base lg:text-lg text-startup-blue font-semibold">
                     Co-creator, NewGen Gurukul • Startup & Systems Operator
                   </p>
                 </div>
 
-                <div className="space-y-4 text-base sm:text-lg text-muted-foreground">
+                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-muted-foreground">
                   <p className="leading-relaxed">
                     "In my decade plus of experience across industries and business functions, I've 
                     donned various hats. I was fortunate to build and scale business streams from scratch. 
@@ -80,7 +80,7 @@ const EvergreenFoundersSection = () => {
 
           {/* Bottom Reassurance */}
           <div className="text-center">
-            <p className="text-lg sm:text-xl text-muted-foreground italic max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground italic max-w-3xl mx-auto px-2">
               We don't just teach frameworks – we help you install them in the messy, real world of 
               your organisation.
             </p>
