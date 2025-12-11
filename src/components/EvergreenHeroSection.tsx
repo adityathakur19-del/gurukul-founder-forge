@@ -72,7 +72,7 @@ const EvergreenHeroSection = () => {
                 className="w-full sm:w-auto bg-gradient-to-r from-saffron to-deep-saffron hover:from-deep-saffron hover:to-saffron text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-warm hover:shadow-xl hover:-translate-y-0.5 transition-all"
                 onClick={handlePrimaryCTA}
               >
-                9 hours Business Fundamental with Tools Bootcamp @ INR 999/-
+                Business Fundamental with AI Bootcamp
               </Button>
               <Button 
                 size="lg" 
