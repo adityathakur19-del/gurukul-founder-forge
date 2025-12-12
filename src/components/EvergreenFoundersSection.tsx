@@ -1,6 +1,5 @@
 const EvergreenFoundersSection = () => {
-  return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-muted/30 overflow-x-hidden">
+  return <section className="py-12 sm:py-20 bg-gradient-to-b from-background to-muted/30 overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 max-w-full">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -24,11 +23,7 @@ const EvergreenFoundersSection = () => {
               <div className="space-y-4 sm:space-y-6">
                 {/* Aditya's Photo */}
                 <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-saffron/30 mx-auto mb-4 shadow-lg">
-                  <img 
-                    src="/lovable-uploads/aditya-thakur.png" 
-                    alt="Aditya Thakur - Founder of NewGen Gurukul"
-                    className="w-full h-full object-cover"
-                  />
+                  
                 </div>
                 
                 <div className="text-center space-y-2">
@@ -58,7 +53,7 @@ const EvergreenFoundersSection = () => {
             <div className="bg-gradient-to-br from-warm-white to-muted/30 rounded-2xl p-6 sm:p-8 border border-startup-blue/20 shadow-warm animate-fade-in-up delay-200">
               <div className="space-y-4 sm:space-y-6">
                 {/* Photo placeholder - will be added */}
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-startup-blue/20 to-green-accent/20 border-4 border-startup-blue/30 mx-auto mb-4"></div>
+                
                 
                 <div className="text-center space-y-2">
                   <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Vaibhav Jaiswal</h3>
@@ -87,8 +82,6 @@ const EvergreenFoundersSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default EvergreenFoundersSection;
